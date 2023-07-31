@@ -1,5 +1,5 @@
 import React from 'react'
-import { cityData } from '../CityData'
+import { cityData,öarData,länderData } from '../CityData'
 const Information = () => {
   return <div className="information">
    <p className='info-vare'>
@@ -70,7 +70,7 @@ const Information = () => {
     </div>
     <div className="information-city">
     <div className="information_city-grid"> 
-        {cityData.map((e)=>{if(e.id===7)
+        {länderData.map((e)=>{if(e.id===7)
             return <div className='information_position'>
         <div className="information_poosition-texts">
           <p className='information_poosition-header'>
@@ -86,7 +86,7 @@ const Information = () => {
         )}
     </div>
     <div className="information_flex">
-        {cityData.map((e)=>{if(e.id>7&&e.id<=10){
+        {länderData.map((e)=>{if(e.id>7&&e.id<=10){
            return <div className='information_position'>
             <h1 className='information_city-header'>{e.city}</h1>            
             <img className="information_city-img-flex" src={e.image} alt="1" />
@@ -95,7 +95,7 @@ const Information = () => {
         })}
         </div>
       <div className="information_city-b">
-          {cityData.map((e)=>{
+          {länderData.map((e)=>{
             if(e.id>10&&e.id<=12){
               return <div className='information_position'>
                 <h1 className='information_city-header'>{e.city}</h1>
@@ -126,7 +126,7 @@ const Information = () => {
     </div>
     <div className="information-city">
     <div className="information_city-grid"> 
-        {cityData.map((e)=>{if(e.id===13)
+        {öarData.map((e)=>{if(e.id===13)
             return <div className='information_position'>
         <div className="information_poosition-texts">
           <p className='information_poosition-header'>
@@ -142,7 +142,7 @@ const Information = () => {
         )}
     </div>
     <div className="information_flex">
-        {cityData.map((e)=>{if(e.id>13&&e.id<=15){
+        {öarData.map((e)=>{if(e.id>13&&e.id<=15){
            return <div className='information_position'>
             <h1 className='information_city-header'>{e.city}</h1>            
             <img className="information_city-img-flex" src={e.image} alt="1" />
@@ -151,7 +151,7 @@ const Information = () => {
         })}
         </div>
       <div className="information_city-b">
-          {cityData.map((e)=>{
+          {öarData.map((e)=>{
             if(e.id>15&&e.id<=17){
               return <div className='information_position'>
                 <h1 className='information_city-header'>{e.city}</h1>

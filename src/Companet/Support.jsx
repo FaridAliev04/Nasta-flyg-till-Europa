@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { sponsorData } from '../Data/SpansorData'
 import { motion } from "framer-motion"
 
+
 const Support = () => {
+ 
 
   return (
     <div className="support">
@@ -22,6 +24,7 @@ const Support = () => {
           })}
         </motion.div>
       </motion.div>
+      
     </div>
   )
 }

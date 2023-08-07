@@ -2,6 +2,9 @@ import React from 'react'
 import { cityData,öarData,länderData } from '../CityData'
 const Information = () => {
   return <div className="information">
+    <div className="info_svg">
+      <img className='info_svg-img' src="svg/svg-intro.svg" alt="" />
+    </div>
    <p className='info-vare'>
     Vare sig det är en stadsresa, en familjesemester eller en affärsresa: vi presenterar de viktigaste sevärdheterna och ger dig nyttig information och tips för din resa.
     </p>

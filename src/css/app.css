@@ -91,9 +91,16 @@ nav {
 }
 
 .information {
+  position: relative;
   width: 70%;
   margin: 0 auto;
   margin-top: 26rem;
+}
+
+.info_svg {
+  position: absolute;
+  right: -12rem;
+  top: 10rem;
 }
 
 .information_city-header {
@@ -216,4 +223,38 @@ nav {
 .support_header {
   text-align: center;
   color: #e91e63;
+}
+
+footer {
+  background-color: #33519c;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.footer_li-link {
+  color: white;
+}
+
+.foooter_top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_ul {
+  gap: 3rem;
+}
+
+.footer_bottom {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.footer_hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
 }/*# sourceMappingURL=app.css.map */

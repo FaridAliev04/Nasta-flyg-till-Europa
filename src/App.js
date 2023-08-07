@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavMain from './Companet/NavMain';
 import Information from './Companet/Information';
 import Support from './Companet/Support';
+import Footer from './Companet/Footer';
 
 function App() {
   return <Fragment>
@@ -13,6 +14,7 @@ function App() {
       <NavMain/>
       <Information/>
       <Support/>
+      <Footer/>
       <Routes>
         {/* <Route/> */}
       </Routes>

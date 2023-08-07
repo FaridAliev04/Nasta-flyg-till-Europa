@@ -16,34 +16,6 @@ a{
 .nav_list{
     margin-top: 0.7rem;
 }
-// .nav_logo-header{
-//     position: absolute;
-// }
-// .nav_logo-span {
-//     transition: 0.5s ease-out;
-//   }
-//   .nav_logo-header_link:hover span:nth-child(1) {
-//     margin-right: 5px;
-//   }
-//   h1:hover span:nth-child(1):after {
-//     content: "ästa";
-//   }
-//   .nav_logo-header_link:hover span:nth-child(2):after {
-//     content: "llyg till";
-//   }
-//   .nav_logo-header_link:hover span:nth-child(3):after {
-//     content: "verige ";
-//   }
-//   .nav_logo-header_link:hover span:nth-child(2) {
-//     margin-left: 2px;
-//   }
-//   .nav_logo-header_link:hover span:nth-child(3) {
-//     margin-left:2px;
-//   }
-//   .nav_logo-header_link:hover span {
-//     color:#264653;
-//   }
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -109,9 +81,15 @@ nav{
     width: 19rem;
 }
 .information{
+    position: relative;
     width: 70%;
     margin: 0 auto;
     margin-top: 26rem;
+}
+.info_svg{
+    position: absolute;
+    right:- 12rem;
+    top: 10rem;
 }
 @mixin city_header{
     font-size: 1.3rem;
@@ -185,28 +163,60 @@ bottom: 1.3%;
 .info{
     margin-top: 4rem;
 }
-.inner-carousel{
+.inner-carousel {
     display: flex;
-   margin-top: 4rem;
-    // gap: 5rem;
-}
-.carousel{
+    margin-top: 4rem;
+  }
+  
+  .carousel {
     cursor: pointer;
     overflow: hidden;
-}
-.inner-carousel-map{
+  }
+  
+  .inner-carousel-map {
     padding-left: 3rem;
     padding-right: 3rem;
-}
-.sponsor_img{
+  }
+  
+  .sponsor_img {
     width: 13rem;
-    height:7rem;  
-    // pointer-events; 
-}
-.support{
-    margin-top:8rem ;
-}
+    height: 7rem;
+  }
+  
+  .support {
+    margin-top: 8rem;
+  }
+  
 .support_header{
     text-align: center;
     color: #e91e63;
+}
+
+footer{
+    background-color: #33519c;
+    padding-left:3rem ;
+    padding-right: 3rem;
+    padding-top:1rem ;
+    padding-bottom:1rem ;
+    margin-top: 5rem;
+}
+.footer_li-link{
+    color: white;
+}
+.foooter_top{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_ul{
+   gap: 3rem; 
+}
+.footer_bottom{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.footer_hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { TypeAnimation } from 'react-type-animation';
 import Typewriter from "typewriter-effect";
 import { cityData } from '../CityData';
 
@@ -8,28 +9,25 @@ const NavMain = () => {
     <video className='nav_main-video' autoPlay loop muted playsInline  src="background/videoBg2.mp4"></video>
     <Navbar />
     <div className="main">
-      <div style={{textAlign:"center"}}className="main_type">
-        <Typewriter 
- 
-          onInit={(typewriter) => {
-          typewriter
-             .typeString(`<spam style=" font-size:2.3rem;color: #023047;font-weight: 600;"  className="main_typewritter-spam"> Nästa flyg till Sverige</spam>`)
-            .pauseFor(300)
-            .deleteChars(7)
-            .typeString(`<spam style=" font-size:2.3rem;color: #023047;font-weight: 600;" className="main_typewritter-spam">Sweden</spam>` )
-            .pauseFor(300)
-            .deleteChars(7)
-            .typeString( ` <spam style="font-size:2.3rem;color: #023047;font-weight: 600;"  className="main_typewritter-spam"> שוודיה"</spam>` )
-            .pauseFor(300)
-            .deleteChars(7)
-            .typeString(`<spam style=" font-size:2.3rem;color: #023047;font-weight: 600;"  className="main_typewritter-spam">Suède</spam>`)
-            .pauseFor(300)
-            .deleteChars(6)
-            .typeString( `<spam style=" font-size:2.3rem;color: #023047;font-weight: 600;"  className="main_typewritter-spam"> Sverige</spam>`)
-            .start()
-         
-          }}
-        />
+
+      <div className="main_type">
+      <TypeAnimation
+      sequence={[
+        'Nästa flyg är Europa',
+        1500, 
+        'Nästa flyg är Avropa',
+        1500,
+        'Nästa flyg är Europe',
+        1500,
+        'Nästa flyg är Euroopa',
+        1500,
+        'Nästa flyg är Eoraip',
+        1500
+      ]}
+      wrapper="h1"
+      speed={20}
+      repeat={Infinity}
+    />
       </div>
       <div className='main_btn-div'>
           <button className='main_btn'>

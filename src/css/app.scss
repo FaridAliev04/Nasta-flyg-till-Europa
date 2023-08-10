@@ -4,7 +4,8 @@ $margin-top-page:10rem;
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans';
+    // font-family: 'Open Sans';
+    font-family: 'Fira Sans';
     
 }
 ul{
@@ -22,16 +23,18 @@ nav{
     padding-top: 1.5rem;
     width: 95%;
     margin: 0 auto;
+    
 }
 .nav_ul{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .nav_li-link{
+    
     font-size: ($nav-fonts);
-    font-weight: 400;
-    color: #264653;
+    font-weight: 500;
+    color: #240046;
     opacity: 0.7;
 }
 .nav_li-link:hover{
@@ -73,96 +76,59 @@ nav{
 .main_btn:hover{
     opacity: 1;
 }
-
-.information_city-img{
-    width: 38rem;
-}
-.information_city-img-flex{
-    width: 19rem;
-}
 .information{
-    position: relative;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 26rem;
 }
-.info_svg{
-    position: absolute;
-    right:- 12rem;
-    top: 10rem;
-}
-@mixin city_header{
-    font-size: 1.3rem;
-    position: absolute;
-    background-color:#ffffffc4;;
-    opacity: 0.7;
-    font-weight: 600;
-    width: 19rem;
-    color: #33519c;
-}
-.information_city-header{
-bottom: 1.3%;
-@include city_header()
-}
-.information_city-header-Stockholm{
-    @include city_header();
-    bottom: 1%;
-    width: 100%;
-}
-
-.information_position{
-    position: relative;
-}
-.information-city{
-    display: grid;
-    grid-template-columns: 39rem auto;
-    grid-template-rows: 26.4rem;
-}
-.information_flex{
-    display: flex;
-    flex-direction: column;
-}
-.information_city-b{
-    position: relative;
-    bottom: 0.5rem;
-    display: flex;
-    gap: 0.2rem;
-}
-.information_index{
-    display: grid;
-    grid-template-columns: 5rem auto;
-}
-.information_number{
-    color: #e91e63;
-    font-weight: 600;
-    font-size: 3rem;
-}
-.information_index-text{
-    margin-top: 0.5rem;
-}
-.information_category{
-    color: #33519c;
-    font-weight: 600;
-    font-size: 1.3rem ;
-}
-
 .info-vare{
     margin-bottom: 4rem;
     font-size: 1.3rem;
 }
-.information_poosition-texts{
-    position: absolute;
-    bottom: 1%;
-    @include city_header();
-    width: 98%;
+
+.info-img{
+    display: flex;
 }
-.information_poosition-text{
-    font-size: 1rem;
-    color: black;
+.data-img{
+    width: 40rem;
 }
+
 .info{
-    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;   
 }
+.info_category{
+    width: auto;
+}
+.info_texts{
+    width: 30rem;
+    color: #264653;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.info_category-number{
+    color: #023047;
+    
+}
+.info_category{
+    color: #e91e63;
+    display: flex;
+    // flex-direction: column;
+    gap: 1rem;
+}
+.info_text{
+    padding-left: 25px ;
+    padding-right:25px ;
+    padding-top:30px ;
+    padding-bottom:20px ;
+   
+}
+.info-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .inner-carousel {
     display: flex;
     margin-top: 4rem;
@@ -219,4 +185,14 @@ footer{
     width: 80%;
     margin: 0 auto;
     margin-top: 1rem;
+}
+.index-module_type__E-SaG{
+    font-size:2.7rem;
+    font-family: 'Fira Sans';
+    color: #023047;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.main_type{
+    text-align: center;
 }

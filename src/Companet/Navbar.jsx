@@ -9,7 +9,7 @@ const Navbar = () => {
         <h1 className='nav_logo-header'>
             <NavLink className="nav_logo-header_link">
                 {/* <span className='nav_logo-span'>N</span> <span className='nav_logo-span'>F</span> <span className='nav_logo-span'>S</span> */}
-                NFS
+                NFE
             </NavLink>
         </h1>
     </div>
@@ -22,7 +22,7 @@ const Navbar = () => {
             </li>
             <li className='nav_li'>
                 <NavLink className="nav_li-link">
-                    STÄDER 
+                Handla om 
                 </NavLink>
             </li>
             <li className='nav_li'>

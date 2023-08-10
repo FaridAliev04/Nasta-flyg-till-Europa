@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="logo">
                 <h1 className='nav_logo-header'>
                     <NavLink className="nav_logo-header_link footer_li-link">
-                        NFS
+                        NFE
                     </NavLink>
                 </h1>
             </div>
@@ -20,7 +20,7 @@ const Footer = () => {
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                            STÄDER 
+                            Handla om
                         </NavLink>
                     </li>
                     <li className='nav_li'>
@@ -44,7 +44,7 @@ const Footer = () => {
         <hr className='footer_hr' />
         <div className="footer_bottom">
             <span className='footer_bottom-span'>
-                © 2023 Nästa flyg till Sverige
+                © 2023 Nästa flyg är Europa
             </span>
         </div>
     </footer>

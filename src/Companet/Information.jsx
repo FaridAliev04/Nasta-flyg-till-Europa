@@ -1,175 +1,116 @@
+import { useState } from 'react'
 import React from 'react'
 import { cityData,öarData,länderData } from '../CityData'
+import { Fade, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
+
 const Information = () => {
+  const [selectedId, setSelectedId] = useState(null)
+  const item = {
+    hidden: { y: 90, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
   return <div className="information">
-    <div className="info_svg">
-      <img className='info_svg-img' src="svg/svg-intro.svg" alt="" />
-    </div>
+  
    <p className='info-vare'>
     Vare sig det är en stadsresa, en familjesemester eller en affärsresa: vi presenterar de viktigaste sevärdheterna och ger dig nyttig information och tips för din resa.
     </p>
-  <div className="info">
-   
-    <div className="information_index">
-      <h1 className='information_number'>01</h1>
-      <div className="information_index-text">
-        <p className='information_category'>
-          Städer
-        </p>
-        <p className='information_category-info'>
-           De vackraste städerna i världen
-        </p>
-      </div>
-    </div>
-    <div className="information-city">
-    <div className="information_city-grid">
+    <div className="info-gap">
+        <div   className="info">
+        <Slide>
+        <div  className="info-img">
+          <div className="info_img-main_div">
+              {cityData.map((e)=>{
+                if(e.id===1 ){
+                  return <img className='data-img ' key={e.id} src={e.image} alt={e.city} />
+                }
+              })}
+            </div>
+        </div>
+        <div className="info_text">
+          
+          <h1 className='info_category'>
+            <span className='info_category-number'>
+              1.
+            </span>
+             Städer
+          </h1>
+          <p className='info_texts'>
+          De officiella turistråden i Skandinavien samarbetar ibland under ett paraply, till exempel Scandinavian Tourist Board. Samarbetet introducerades för den asiatiska marknaden 1986, när den svenska nationella turiststyrelsen anslöt sig till den danska nationella turiststyrelsen för att samordna mellanstatlig marknadsföring av de två länderna. Norges regering gick in ett år senare. Alla fem nordiska regeringarna deltar i de gemensamma marknadsföringsinsatserna i USA genom Scandinavian Tourist Board of North America.
+          </p>
+          
+        </div>
+        </Slide>
+        </div>
+ 
+        <div   className="info">
+        <Slide direction='right'>
+        <div className="info_text">
+          
+          <h1 className='info_category'>
+            <span className='info_category-number'>
+              2.
+            </span>         
+            Länder
+          </h1>
+          <p className='info_texts'>
+          Skandinavien är en delregion i norra Europa, med starka historiska, kulturella och språkliga band mellan de ingående folken. Skandinavien hänvisar oftast till Danmark, Norge och Sverige. I engelsk användning kan det ibland också syfta mer snävt till den skandinaviska halvön (som utesluter Danmark men inkluderar en del av Finland), eller mer allmänt till alla de nordiska länderna, inklusive Finland, Island och Färöarna.
+          </p>
+          
+        </div>
+        
+        <div  className="info-img">
+          <div className="info_img-main_div">
+              {länderData.map((e)=>{
+                if(e.id===7 ){
+                  return <img className='data-img ' key={e.id} src={e.image} alt={e.city} />
+                }
+              })}
+            </div>
+        </div>
+        </Slide>
+        </div>
+
+        <div   className="info">
+        <Slide>
+        <div  className="info-img">
+          <div className="info_img-main_div">
+              {öarData.map((e)=>{
+                if(e.id===13){
+                  return <img className='data-img ' key={e.id} src={e.image} alt={e.city} />
+                }
+              })}
+            </div>
+        </div>
+        <div className="info_text">
+          
+          <h1 className='info_category'>
+            <span className='info_category-number'>
+              3.
+            </span>
+             Öar
+          </h1>
+          <p className='info_texts'>
+          Sylt, Korsika eller Kanarieöarna - öar är bland de mest populära resmålen. På den här sidan hittar du ett urval av de populäraste och vackraste öarna för din nästa semester.Länet som bildas av skärgården är det näst minsta till yta och är det minst befolkade i Sverige. Trots den lilla storleken på grund av dess smala bredd är köravståndet mellan de yttersta punkterna på de befolkade öarna cirka 170 kilometer
+          </p>
+          
+        </div>
+        </Slide>
+        </div>
       
-        {cityData.map((e)=>{if(e.id===1)
-            return <div key={e.id} className='information_position'>
-        <h1  className='information_city-header-Stockholm'>{e.city}</h1>
-        <img  className="information_city-img" src={e.image} alt="1" />
       </div>
-        }
-        )}
-    </div>
-    <div className="information_flex">
-        {cityData.map((e)=>{if(e.id>1&&e.id<=4){
-           return <div key={e.id} className='information_position'>
-            <h1 className='information_city-header'>{e.city}</h1>            
-            <img className="information_city-img-flex" src={e.image} alt="1" />
-            </div> 
-        }
-        })}
-        </div>
-      <div className="information_city-b">
-          {cityData.map((e)=>{
-            if(e.id>4&&e.id<=6){
-              return <div key={e.id} className='information_position'>
-                <h1  className='information_city-header'>{e.city}</h1>
-                <img  className="information_city-img-flex" src={e.image} alt="1" />
-                </div>
-               
-            }
-          })}
-      </div>    
-        
-  
-
-      </div>
-    </div>
-
-    <div className="info">
-   
-    <div className="information_index">
-      <h1 className='information_number'>02</h1>
-      <div className="information_index-text">
-        <p className='information_category'>
-        Länder
-        </p>
-        <p className='information_category-info'>
-        Världens vackraste länder
-        </p>
-      </div>
-    </div>
-    <div className="information-city">
-    <div className="information_city-grid"> 
-        {länderData.map((e)=>{if(e.id===7)
-            return <div key={e.id} className='information_position'>
-        <div className="information_poosition-texts">
-          <p className='information_poosition-header'>
-            {e.header}
-          </p>
-          <p className='information_poosition-text'>
-            {e.title}
-          </p>
-        </div>
-        <img className="information_city-img" src={e.image} alt="1" />
-      </div>
-        }
-        )}
-    </div>
-    <div className="information_flex">
-        {länderData.map((e)=>{if(e.id>7&&e.id<=10){
-           return <div key={e.id} className='information_position'>
-            <h1 className='information_city-header'>{e.city}</h1>            
-            <img className="information_city-img-flex" src={e.image} alt="1" />
-            </div> 
-        }
-        })}
-        </div>
-      <div className="information_city-b">
-          {länderData.map((e)=>{
-            if(e.id>10&&e.id<=12){
-              return <div key={e.id} className='information_position'>
-                <h1 className='information_city-header'>{e.city}</h1>
-                <img className="information_city-img-flex" src={e.image} alt="1" />
-                </div>
-               
-            }
-          })}
-      </div>    
-        
-  
-
-      </div>
-    </div>
-
-    <div className="info">
-   
-    <div className="information_index">
-      <h1 className='information_number'>03</h1>
-      <div className="information_index-text">
-        <p className='information_category'>
-        Öar
-        </p>
-        <p className='information_category-info'>
-        Världens vackraste öar
-        </p>
-      </div>
-    </div>
-    <div className="information-city">
-    <div className="information_city-grid"> 
-        {öarData.map((e)=>{if(e.id===13)
-            return <div key={e.id} className='information_position'>
-        <div className="information_poosition-texts">
-          <p className='information_poosition-header'>
-            {e.header}
-          </p>
-          <p className='information_poosition-text'>
-            {e.title}
-          </p>
-        </div>
-        <img  className="information_city-img" src={e.image} alt="1" />
-      </div>
-        }
-        )}
-    </div>
-    <div className="information_flex">
-        {öarData.map((e)=>{if(e.id>13&&e.id<=15){
-           return <div key={e.id} className='information_position'>
-            <h1 className='information_city-header'>{e.city}</h1>            
-            <img className="information_city-img-flex" src={e.image} alt="1" />
-            </div> 
-        }
-        })}
-        </div>
-      <div className="information_city-b">
-          {öarData.map((e)=>{
-            if(e.id>15&&e.id<=17){
-              return <div key={e.id} className='information_position'>
-                <h1 className='information_city-header'>{e.city}</h1>
-                <img className="information_city-img-flex" src={e.image} alt="1" />
-                </div>
-               
-            }
-          })}
-      </div>    
-        
-  
-
-      </div>
-    </div>
-  
   </div>
   
 }

@@ -7,16 +7,14 @@ import NavMain from './Companet/NavMain';
 import Information from './Companet/Information';
 import Support from './Companet/Support';
 import Footer from './Companet/Footer';
+import CoHome from './comps/CoHome';
 
 function App() {
   return <Fragment>
     <BrowserRouter>
-      <NavMain/>
-      <Information/>
-      <Support/>
-      <Footer/>
+
       <Routes>
-        {/* <Route/> */}
+        <Route path='/' element={<CoHome/>}/>
       </Routes>
     </BrowserRouter>
   </Fragment>;

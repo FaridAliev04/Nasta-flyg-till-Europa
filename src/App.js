@@ -8,6 +8,7 @@ import Information from './Companet/Information';
 import Support from './Companet/Support';
 import Footer from './Companet/Footer';
 import CoHome from './comps/CoHome';
+import CoAbout from './comps/CoAbout';
 
 function App() {
   return <Fragment>
@@ -15,6 +16,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<CoHome/>}/>
+        <Route path='/HandlaOm' element={<CoAbout/>}/>
       </Routes>
     </BrowserRouter>
   </Fragment>;

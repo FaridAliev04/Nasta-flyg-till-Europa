@@ -213,4 +213,17 @@ footer {
 
 .main_type {
   text-align: center;
+}
+
+.about {
+  background-image: url(../../public/cityPhoto/about-bg.jpg);
+  background-size: 100%;
+}
+
+.aboutNav_li-link {
+  color: white;
+}
+
+.about-main {
+  height: 50rem;
 }/*# sourceMappingURL=app.css.map */

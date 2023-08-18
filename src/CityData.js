@@ -1,12 +1,14 @@
 export const cityData=[{
     id:1,
     city:"Stockholm",
-    category:"Sweden city",
+    country:"Sweden",
+    category:"city",
     image:"https://media1.travelguide.de/media/2020/04/stockholm-attraktionen.jpg.webp"
     
 },{
     id:2,
     city:"Nice",
+    country:"France",
     category:"city",
     image:"https://media1.travelguide.de/media/2019/02/nizza-ferienhaus-2-600x400.jpg.webp"
 },

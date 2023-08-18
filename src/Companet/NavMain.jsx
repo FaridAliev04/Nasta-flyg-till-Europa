@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { TypeAnimation } from 'react-type-animation';
 import Typewriter from "typewriter-effect";
 import { cityData } from '../CityData';
+import { NavLink } from 'react-router-dom';
 
 const NavMain = () => {
   return <div className="nav_main">
@@ -30,9 +31,11 @@ const NavMain = () => {
     />
       </div>
       <div className='main_btn-div'>
+        <NavLink to="/HandlaOm">
           <button className='main_btn'>
             Lär dig mer
           </button>
+          </NavLink>
       </div>
     </div>
   </div>

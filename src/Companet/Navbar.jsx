@@ -7,7 +7,7 @@ const Navbar = () => {
   return <nav>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
-            <NavLink className="nav_logo-header_link">
+            <NavLink to="/" className="nav_logo-header_link">
                 {/* <span className='nav_logo-span'>N</span> <span className='nav_logo-span'>F</span> <span className='nav_logo-span'>S</span> */}
                 NFE
             </NavLink>

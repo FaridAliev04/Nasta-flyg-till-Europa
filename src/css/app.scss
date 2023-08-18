@@ -6,6 +6,7 @@ $margin-top-page:10rem;
     margin: 0;
     // font-family: 'Open Sans';
     font-family: 'Fira Sans';
+    box-sizing: border-box;
     
 }
 ul{
@@ -76,10 +77,23 @@ nav{
 .main_btn:hover{
     opacity: 1;
 }
-.information{
+.information_box{
     width: 90%;
     margin: 0 auto;
-    margin-top: 26rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  
+}
+.information{
+    margin-top: 20rem;
+     background-color: #d8e2dc ;
+      overflow-y: hidden;
+      position: relative;
+}
+.svg{
+    position: absolute;
+    right: 0;
+    z-index: 0;
 }
 .info-vare{
     margin-bottom: 4rem;
@@ -95,7 +109,9 @@ nav{
 
 .info{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    z-index: 99999;
+    background-color:#d8e2dc ;
 }
 .info_category{
     width: auto;
@@ -105,6 +121,7 @@ nav{
     color: #264653;
     font-size: 1.2rem;
     margin-top: 1rem;
+    letter-spacing: 3px;
 }
 .info_category-number{
     color: #023047;
@@ -199,10 +216,110 @@ footer{
 .about{
     background-image: url(../../public/cityPhoto/about-bg.jpg);
     background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    overflow: hidden;
 }
 .aboutNav_li-link{
     color: white;
 }
 .about-main{
-    height: 50rem;
+    height: 35rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.about-main_header{
+    color: #f6fff8;
+    width: auto;
+    font-size: 2rem;
+}
+.about_main-flag_img{
+    width: 30rem;
+    height: 40rem;
+}
+.flag{
+    display: flex;
+    overflow-x: hidden;
+}
+.slide_flag-img{
+    width: 50%;
+    background-color: #a8dadc;
+}
+.slide_flag-text{
+    width: 50%;
+    background-color: #457b9d;
+}
+.flag_text{
+    padding-left: 4rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about_main-flag_div{
+    float: right;
+}
+.about_main-link-wikipedia{
+    width: 5rem;
+    font-size: 1rem;
+    color:white;
+}
+.about_main-flag_name{
+    color: #e91e63;
+}
+.about_main-flag-text{
+    width: 23rem;
+    letter-spacing: 2px;
+}
+.about_link-icons{
+    position: absolute;
+    bottom: 0.05rem;
+    right: -1.5rem;
+}
+.about_main-link-wikipedia{
+    position: relative;
+}
+.airAbout_img{
+    width: 35rem;
+    height: 25rem;
+}
+.air_main{
+    display: flex;
+    overflow-x: hidden;
+}
+.airAbout_text{
+    padding-right: 4rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    float: right;
+}
+.airAbout_name{
+    color: #e91e63;
+}
+.airAbout_texts{
+    width: 26rem;
+    letter-spacing: 2px;
+}
+.slide_airAbout-text{
+    width: 50%;
+    background-color: #1a759f;
+}
+.slide_airAbout-img{
+    width: 50%;
+    background-color: #1e6091;
+}
+.about_main-flag_div{
+    display: flex;
+}
+.airAbout_img-div{
+    display: flex;
 }

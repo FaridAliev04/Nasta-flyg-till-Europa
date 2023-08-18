@@ -6,7 +6,7 @@ const AboutNav = () => {
     <nav>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
-            <NavLink className="nav_logo-header_link  aboutNav_li-link">
+            <NavLink to="/" className="nav_logo-header_link  aboutNav_li-link">
                 NFE
             </NavLink>
         </h1>

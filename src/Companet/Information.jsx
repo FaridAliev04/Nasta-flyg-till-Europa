@@ -5,25 +5,13 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 
 const Information = () => {
-  const [selectedId, setSelectedId] = useState(null)
-  const item = {
-    hidden: { y: 90, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
+
   
   return <div className="information">
-  
+    <div className="svg">
+      <img src="svg/svg-intro.svg" alt="" />
+    </div>
+  <div className="information_box">
    <p className='info-vare'>
     Vare sig det är en stadsresa, en familjesemester eller en affärsresa: vi presenterar de viktigaste sevärdheterna och ger dig nyttig information och tips för din resa.
     </p>
@@ -110,6 +98,7 @@ const Information = () => {
         </Slide>
         </div>
       
+      </div>
       </div>
   </div>
   

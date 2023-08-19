@@ -409,4 +409,9 @@ footer {
   left: 0;
   width: 3rem;
   height: 2rem;
+}
+
+.detail_map {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=app.css.map */

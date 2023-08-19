@@ -24,18 +24,18 @@ const Footer = () => {
                         </NavLink>
                     </li>
                     <li className='nav_li'>
-                        <NavLink className="nav_li-link footer_li-link">
-                            Hjälp
+                        <NavLink to="/Tures" className="nav_li-link footer_li-link">
+                            Tures
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                            Favorit
+                             Vagn
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                            Turer
+                        Favorit
                         </NavLink>
                     </li>
                 </ul>

@@ -71,8 +71,10 @@ export default function Faq() {
   }
   console.log(info);
   return (
-    <div> {info.map((e)=>{
-     return <Accordion >
+    <div className='faq'>
+        <h1 className='fag_header'>Vanliga frågor</h1>
+         {info.map((e)=>{
+     return <Accordion key={e.id} >
        
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
              <Typography>{e.question}</Typography>

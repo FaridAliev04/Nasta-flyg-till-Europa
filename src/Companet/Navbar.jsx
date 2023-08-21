@@ -31,7 +31,7 @@ const Navbar = () => {
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink className="nav_li-link">
+                <NavLink to="/SellCart" className="nav_li-link">
                     Vagn
                 </NavLink>
             </li>

@@ -11,6 +11,7 @@ import CoHome from './comps/CoHome';
 import CoAbout from './comps/CoAbout';
 import CoTures from './comps/CoTures';
 import Detail from './Companet/Detail';
+import CoSellCart from './comps/CoSellCart';
 
 function App() {
   return <Fragment>
@@ -21,6 +22,7 @@ function App() {
         <Route path='/HandlaOm' element={<CoAbout/>}/>
         <Route path='/Tures' element={<CoTures/>}/>
         <Route path='card/detail/:id' element={<Detail/>}/>
+        <Route path='/SellCart' element={<CoSellCart/>}/>
       </Routes>
     </BrowserRouter>
   </Fragment>;

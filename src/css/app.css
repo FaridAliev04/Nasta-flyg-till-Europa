@@ -376,11 +376,22 @@ footer {
   gap: 2rem;
 }
 
+.coTures {
+  background-color: #33519c;
+}
+
+.tures {
+  margin-top: 5rem;
+}
+
 .tures_cart {
-  border: 1px solid black;
+  border-radius: 12px;
+  background-color: #bde0fe;
 }
 
 .tures_cart-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   width: 25rem;
   height: 15rem;
 }
@@ -409,6 +420,7 @@ footer {
   left: 0;
   width: 3rem;
   height: 2rem;
+  border-top-left-radius: 12px;
 }
 
 .detail_img {
@@ -417,38 +429,38 @@ footer {
 
 .detail_map {
   display: flex;
+  justify-content: space-between;
+}
+
+.detail_sell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tures_cart-icon-none {
+  display: none;
+  transition: 1s;
+  transform: rotate(90deg);
 }
 
 .tures_cart-icon {
-  position: absolute;
   cursor: pointer;
   right: 2rem;
-  width: 2rem;
+  width: 2.5rem;
   top: 0;
-  height: 2rem;
+  height: 2.5rem;
   color: red;
 }
 
-.tures_cart-icon-off {
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  width: 2rem;
-  top: 0;
-  height: 2rem;
-  color: red;
+.tures_cart-heart-btn {
+  display: flex;
+  gap: 0.2rem;
 }
 
-.tures_cart-icon-hover {
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  width: 2rem;
-  top: 0;
-  height: 2rem;
-  color: red;
-  background-color: red;
-  transition: 1s;
+.tures_cart-allBtn {
+  display: flex;
+  justify-content: space-between;
 }
 
 .tures_cart-name {

@@ -41,7 +41,7 @@ const Detail = () => {
             <Navbar/>
             {info.map((e)=>{
                 if(e.id==id){
-                   return <div className='detail_map'>
+                   return <div key={e.id} className='detail_map'>
                         <div className="detail_img-div">
                             <img className="detail_img" clas src={e.img} alt="" />
                         </div>

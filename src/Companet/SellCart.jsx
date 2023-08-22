@@ -25,12 +25,7 @@ const SellCart = () => {
       
         
       
-      // {info.filter((e)=>{
-      //   if(e.offline===true){
-      //     offline.push(e)
-      //   }
-      // })}
-      // console.log(offline)
+
       const filter=info.filter((e)=>{
           if(e.offline===true){
             return e
@@ -40,14 +35,6 @@ const SellCart = () => {
     
   return (
     <div>
-      {/* {
-        offline.map((e)=>{
-          return <div>
-            <img className='f' src={e.img} alt="" />
-          </div>
-        })
-      } */}
-
       {filter.map((e)=>{
         return <div>
           <img src={e.img} alt="" />

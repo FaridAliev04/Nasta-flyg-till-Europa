@@ -372,15 +372,21 @@ footer{
 }
 .detail_img{
     width: 40rem;
+    height: 30rem;
 }
 .detail_map{
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 .detail_sell{
     display: flex;
+    padding-top:1rem ;
+    padding-bottom:1rem ;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.4rem;
 }
 .tures_cart-icon-none{
    display: none; 
@@ -395,6 +401,7 @@ footer{
     height: 2.5rem;
     color: red;
 }
+
 .tures_cart-heart-btn{
     display: flex;
     gap: 0.2rem;
@@ -425,4 +432,62 @@ footer{
 }
 .tures_cart-texts{
     padding: 15px 20px;
+}
+.detail_sell-name{
+    font-size: 2;
+    font-weight: 500;
+    color: #240046;
+}
+.detail_sell-price{
+    font-size: 2.5rem;
+    color: #e91e63;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.detail_form{
+    display: flex;
+    gap: 1rem;
+}
+.date_icons{
+    margin-top: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+}
+.date_label{
+    font-size: 1.2rem;
+}
+.date_input{
+    font-size: 1rem;
+    padding: 8px 25px;
+    outline: none;
+}
+.person_number-icons{
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}
+.person_number-btn{
+    border: none;
+    background-color: #1a759f;
+    padding: 5px 8px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.person_number{
+    font-size: 1.5rem;
+}
+.person_number-div{
+    display: flex;
+    gap: 1rem;
+}
+.detail_btn{
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 9px;
+    background-color: #1a759f;
+    padding: 8px 20px;
 }

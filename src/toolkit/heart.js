@@ -1,21 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+
+
 const initialState={
-    value:false
+    value:0
 }
 
 export const heart=createSlice({
+  
     name:"name",
     initialState,
     reducers:{
-        heartTrue:(state)=>{
-          state.value= true
+        pilus:(state)=>{
+           
+          state.value+=1
         },
-        heartFalse:(state)=>{
-          state.value=false
+        minus:(state)=>{
+          state.value-=1
         }
     }
 })
 
-export const {heartTrue,heartFalse}=heart.actions
+export const {pilus,minus}=heart.actions
 export default heart.reducer

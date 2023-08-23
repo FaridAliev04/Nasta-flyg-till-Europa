@@ -34,7 +34,7 @@ const AboutNav = () => {
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink className="nav_li-link  aboutNav_li-link">
+                <NavLink to="/favorite" className="nav_li-link  aboutNav_li-link">
                     Favorit
                 </NavLink>
             </li>

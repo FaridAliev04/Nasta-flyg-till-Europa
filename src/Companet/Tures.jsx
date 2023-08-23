@@ -80,8 +80,8 @@ const Tures = () => {
               <div className="tures_cart-allBtn">
                 <button className="tures_cart-btn" onClick={() => navigate(`/card/detail/${e.id}`)}>köp en biljett</button>
                 <div className="tures_cart-heart-btn">
-                  <img onClick={()=>(favoriteTestTrue(e))} className={e.favorite===false?"tures_cart-icon":"tures_cart-icon-none"} src="svg/heart-check-svgrepo-com (1).svg" alt="" />
-                  <img onClick={()=>(favoriteTestFalse(e))} className={e.favorite===true?"tures_cart-icon":"tures_cart-icon-none"} src="svg/heart-x-svgrepo-com (2).svg" alt="" />                  
+                  <img onClick={()=>(favoriteTestTrue(e))} className={e.favorite===false?"tures_cart-icon":"tures_cart-icon-none"} src="svg/heart-x-svgrepo-com (2).svg" alt="" />
+                  <img onClick={()=>(favoriteTestFalse(e))} className={e.favorite===true?"tures_cart-icon":"tures_cart-icon-none"} src="svg/heart-check-svgrepo-com (1).svg" alt="" />                  
                 </div>
               </div>
             </div>

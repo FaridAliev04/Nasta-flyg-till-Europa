@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { Roll } from 'react-awesome-reveal'
 const Favorite = () => {
     const [info,setInfo]=useState([])
+    const [test,setTest]=useState(false)
     const navigate=useNavigate()
     useEffect(() => {
         getData();
@@ -31,7 +32,7 @@ const Favorite = () => {
             return e
         }
     })
-    console.log(filter)
+    console.log(filter.length)
 
     async function favoriteTestFalse(d){ 
       const {data,error}=await supabase.from("information").update({
@@ -46,13 +47,8 @@ const Favorite = () => {
     }
   return (
     <div className='tures_info-map'>
-      {filter.map((e)=>{
-        if(e===[]){
-          return <h1>Not Favorite</h1>
-        }
-      })}
-    
-      {filter.map((e)=>{
+   {filter.length===0?<h1 className='filter_not-favorite'>Not Favorite</h1>:
+      filter.map((e)=>{
         return (<Roll>
           <div key={e.id} className="tures_cart">
             <div className="tures_cart-img_position">
@@ -74,8 +70,8 @@ const Favorite = () => {
               </div>
             </div>
           </div></Roll>)
-      })}
-
+      })
+}
 
     </div>
   )

@@ -57,7 +57,8 @@ const Detail = () => {
 
     async function sellBtn(d){
       const {data,error}=await supabase.from("information").update({
-        ticket:d.ticket
+        ticket:d.ticket,
+        price:d.price*d.ticket
       }).eq("id",d.id) 
     }
 

@@ -47,7 +47,7 @@ const Favorite = () => {
     }
   return (
     <div className='tures_info-map'>
-   {filter.length===0?<h1 className='filter_not-favorite'>Not Favorite</h1>:
+   {filter.length===0?<h1 className='filter_not-favorite'>Du har ingen favorit</h1>:
       filter.map((e)=>{
         return (<Roll>
           <div key={e.id} className="tures_cart">

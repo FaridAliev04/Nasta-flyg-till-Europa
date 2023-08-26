@@ -484,6 +484,7 @@ footer{
 }
 .detail_btn{
     border: none;
+    cursor: pointer;
     font-size: 16px;
     color: white;
     border-radius: 9px;
@@ -534,4 +535,65 @@ footer{
     padding: 3px 24px;
     border: none;
     border-radius: 12px;
+}
+.filter_div{
+    position: relative;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+.filter_icons-div{
+    margin-top: 0.3rem;
+}
+.filter_icons{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.filter_header{
+    display: flex;
+    font-size: 1.4rem;
+    gap: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filter_div{
+    background-color: white;
+    padding: 7px 14px;
+    border-radius: 9px;
+    width: 10rem;
+}
+.sellCart_div{
+    margin-top: 5rem;
+}
+.filter_box{
+    display: flex;
+    gap: 0.5rem;
+}
+.filter_position{
+    display: none;
+    position: absolute;
+}
+.filter_position-block{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    width: 10rem;
+    background-color: white;
+    padding: 7px 14px;
+    left: 0;
+}
+.sellCart-img{
+    width: 20rem;
+    height: 10rem;
+}
+.tures_info-plus{
+    color: white;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 3rem;
+}
+.tures_info-plus_div{
+display: flex;
+justify-content: center;
 }

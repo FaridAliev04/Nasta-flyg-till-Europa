@@ -9,12 +9,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import { minus, pilus } from '../toolkit/heart';
 
 const Detail = () => {
+  
     const {id} = useParams()
         const [info, setInfo] = useState([]);
-        const [test,setTest] =useState()
+        const [testGedis,setTestGedis]=useState()
+        const[testGelis,setTestGelis]=useState()
+        
+        const [test,setTest] =useState(false)
         const value=useSelector((e)=>e.name.value)
+        const [valuePush,setValuePush]=useState(value)
         const dispatch=useDispatch()
- 
+
         useEffect(() => {
             getData();
           }, []);
@@ -30,9 +35,6 @@ const Detail = () => {
                 setInfo(data);
                 
               }
-              const {da,e}=await supabase.from("information").update({
-                ticket:0
-              }).eq("id",id)
             } catch (error) {
               console.log("q");
             }
@@ -49,28 +51,40 @@ const Detail = () => {
   async function azalmaFunc(d){ 
     setInfo(info.map((e)=>{
       if(d.id===e.id){
-        return {...e,ticket:e.ticket-1}
+        
+        dispatch(minus())
       }
       return e
     }))
+    setTest(true)
     }
 
     async function sellBtn(d){
       const {data,error}=await supabase.from("information").update({
-        ticket:d.ticket,
-        price:d.price*d.ticket
+        ticket:value,
+        sellPrice:d.price*value
       }).eq("id",d.id) 
+      alert(`${info.cityName} alindi`)
+      window.location.reload()
     }
 
  async function artimFunc(d){ 
   setInfo(info.map((e)=>{
     if(d.id===e.id){
-      return {...e,ticket:e.ticket+1}
+      
+      dispatch(pilus())
     }
     return e
   }))
+  setTest(true)
   }
-          
+
+  async function GedisGelis(d){
+    const {data,error}=await supabase.from("information").update({
+      gedis:testGedis,
+      gelis:testGelis,
+    }).eq("id",d.id) 
+  }     
       return (
         <div>
             <Navbar/>
@@ -90,22 +104,22 @@ const Detail = () => {
                               <form className='detail_form'>
                                 <div className="date">
                                   <label className='date_label' >Flyg datum</label>
-                                  <input onChange={(e)=>setTest(e.target.value)} type="date"  className='date_input' />
+                                  <input onChange={(e)=>setTestGedis(e.target.value)} type="date"  className='date_input' />
                                 </div>
                                 <BsArrowLeftRight className='date_icons'/>
                                 <div className="date">
                                   <label className='date_label'>Återlämningsdatum</label>
-                                  <input type="date" className='date_input' />
+                                  <input onChange={(e)=>setTestGelis(e.target.value)} type="date" className='date_input' />
                                 </div>
                               </form>
                             
                             <div className='person_number-div'>
                               <button onClick={()=>azalmaFunc(e)} className='person_number-btn'><BsPersonDashFill className='person_number-icons'/></button>
-                              <span className='person_number'>{e.ticket}</span>
+                              <span className='person_number'>{value}</span>
                               <button onClick={()=>artimFunc(e) }className='person_number-btn'><BsFillPersonPlusFill className='person_number-icons'/></button>
                             </div>
 
-                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e))}>Köpa</button>
+                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e),GedisGelis(e))}>Köpa</button>
                         </div>
 
                     </div>

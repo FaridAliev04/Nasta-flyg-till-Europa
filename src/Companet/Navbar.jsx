@@ -26,9 +26,10 @@ const Navbar = () => {
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink to="/Tures" className="nav_li-link">
+                <a href="/Tures" className="nav_li-link">
                    Tures
-                </NavLink>
+                </a>
+                
             </li>
             <li className='nav_li'>
                 <NavLink to="/SellCart" className="nav_li-link">

@@ -9,7 +9,7 @@ const Information = () => {
   
   return <div className="information">
     <div className="svg">
-      <img src="svg/svg-intro.svg" alt="" />
+      {/* <img src="svg/svg-intro.svg" alt="" /> */}
     </div>
   <div className="information_box">
    <p className='info-vare'>

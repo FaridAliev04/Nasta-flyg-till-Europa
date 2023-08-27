@@ -92,7 +92,7 @@ nav {
 
 .information {
   margin-top: 20rem;
-  background-color: #d8e2dc;
+  background-color: #1a759f;
   overflow-y: hidden;
   position: relative;
 }
@@ -120,7 +120,7 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 99999;
-  background-color: #d8e2dc;
+  background-color: #1a759f;
 }
 
 .info_category {
@@ -129,7 +129,7 @@ nav {
 
 .info_texts {
   width: 30rem;
-  color: #264653;
+  color: white;
   font-size: 1.2rem;
   margin-top: 1rem;
   letter-spacing: 3px;
@@ -140,7 +140,7 @@ nav {
 }
 
 .info_category {
-  color: #e91e63;
+  color: #240046;
   display: flex;
   gap: 1rem;
 }
@@ -166,6 +166,10 @@ nav {
 .carousel {
   cursor: pointer;
   overflow: hidden;
+}
+
+.info_category-number {
+  color: #240046;
 }
 
 .inner-carousel-map {
@@ -675,8 +679,9 @@ footer {
 }
 
 .sellCart-img {
-  width: 20rem;
-  height: 10rem;
+  width: 22rem;
+  height: 15rem;
+  border-radius: 9px;
 }
 
 .tures_info-plus {
@@ -690,4 +695,93 @@ footer {
 .tures_info-plus_div {
   display: flex;
   justify-content: center;
+}
+
+.sellCart_div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sell_cart-header_ticket {
+  display: flex;
+}
+
+.sellCart {
+  display: flex;
+  background-color: #1a759f;
+}
+
+.sellCart_info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  margin-left: 2rem;
+}
+
+.sellCart_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sellCart_info-div_btn {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell_cart-header {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.sell_cart-header_ticket {
+  display: flex;
+  gap: 0.3rem;
+  color: white;
+  font-size: 1.9rem;
+  margin-top: 0.1rem;
+}
+
+.sell_cart-header_icons-div {
+  margin-top: 0.1rem;
+}
+
+.sellCart_info-gedisgelis {
+  color: white;
+  font-size: 1.9rem;
+}
+
+.gedisGelis_icons {
+  font-size: 1.6rem;
+}
+
+.sell_cart-price {
+  color: white;
+  font-size: 1.9rem;
+}
+
+.sellCart_info-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  background-color: #023047;
+  padding: 7px 14px;
+  color: white;
+  font-size: 1rem;
+}
+
+.login_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login_div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }/*# sourceMappingURL=app.css.map */

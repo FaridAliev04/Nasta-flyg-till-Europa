@@ -7,6 +7,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import { faqData } from '../Data/Faq';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -45,35 +46,10 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Faq() {
-  const [expanded, setExpanded] = React.useState('panel1');
-
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
-  };
-  const [info, setInfo] = useState([]);
-  useEffect(() => {
-    getData();
-  }, []);
-
-  async function getData() {
-    try {
-      const { data, error } = await supabase
-        .from("faq")
-        .select("*")
-        .limit(30);
-      if (error) throw error;
-      if (data != null) {
-        setInfo(data);
-      }
-    } catch (error) {
-      console.log("q");
-    }
-  }
-  console.log(info);
   return (
     <div className='faq'>
         <h1 className='fag_header'>Vanliga frågor</h1>
-         {info.map((e)=>{
+         {faqData.map((e)=>{
      return <Accordion key={e.id} >
        
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">

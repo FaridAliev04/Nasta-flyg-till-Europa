@@ -54,8 +54,8 @@ const SellCart = () => {
     
   return (
     <div className='sellCart_div'>
-      {filter.length===0?<h1 className='filter_not-favorite'>Det finns inget på kortet</h1>:filter.map((e)=>{
-        return <Slide>
+      {filter.length===0?<h1 className='filter_not-favorite'>Det finns inget på kortet</h1>:filter.map((e)=>{ 
+        return<Slide>
         <div className='sellCart'>
           <img className='sellCart-img' src={e.img} alt="" />
           <div className="sellCart_info">

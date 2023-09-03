@@ -12,19 +12,20 @@ import CoSellCart from './comps/CoSellCart';
 import { Favorite } from '@mui/icons-material';
 import CoFavorite from './comps/CoFavorite';
 import Login from './Companet/Login';
+import CoLogin from './comps/CoLogin';
 
 function App() {
 
   return <Fragment>
     <BrowserRouter>
-      <Login/>
       <Routes>
-        {/* <Route path='/' element={<CoHome/>}/>
+        <Route path='/hem' element={<CoHome/>}/>
         <Route path='/HandlaOm' element={<CoAbout/>}/>
         <Route path='/Tures' element={<CoTures/>}/>
         <Route path='card/detail/:id' element={<Detail/>}/>
         <Route path='/SellCart' element={<CoSellCart/>}/>
-        <Route path='/favorite' element={<CoFavorite/>}/> */}
+        <Route path='/favorite' element={<CoFavorite/>}/>
+        <Route path='/' element={<CoLogin/>}/>
       </Routes>
     </BrowserRouter>
   </Fragment>;

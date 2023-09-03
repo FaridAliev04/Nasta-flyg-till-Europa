@@ -21,6 +21,7 @@ const Tures = () => {
     getData();
   }, []);
 
+  
 
   async function getData() {
     try {

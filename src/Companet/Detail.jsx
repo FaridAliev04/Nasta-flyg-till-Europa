@@ -7,23 +7,43 @@ import Footer from "./Footer"
 import {BsArrowLeftRight,BsFillPersonPlusFill,BsPersonDashFill} from "react-icons/bs"
 import { useDispatch, useSelector } from 'react-redux';
 import { minus, pilus } from '../toolkit/heart';
+import ModeNav from './ModeNav';
 
 const Detail = () => {
   
     const {id} = useParams()
         const [info, setInfo] = useState([]);
         const [testGedis,setTestGedis]=useState()
-        const[testGelis,setTestGelis]=useState()
-        
+        const [mesaj,setMesaj]=useState(false)
+        const[testGelis,setTestGelis]=useState(true)
         const [test,setTest] =useState(false)
         const value=useSelector((e)=>e.name.value)
-        const [valuePush,setValuePush]=useState(value)
-        const dispatch=useDispatch()
 
+        const dispatch=useDispatch()
         useEffect(() => {
             getData();
+            getDatas()
           }, []);
         console.log(test)
+      
+         const [inpInfo,setInpInfo]=useState([])
+      
+          console.log(inpInfo)
+          
+            async function getDatas() {
+              try {
+                const { data, error } = await supabase
+                  .from("Login")
+                  .select("*")
+                  .limit(30);
+                if (error) throw error;
+                if (data != null) {
+                  setInpInfo(data);
+                }
+              } catch (error) {
+                console.log("q");
+              }
+            } 
           async function getData() {
             try {
               const { data, error } = await supabase
@@ -39,10 +59,11 @@ const Detail = () => {
               console.log("q");
             }
           }
-          async function online(){
-            const {data,error}=await supabase.from("information").update({
+          async function online(){   
+                const {data,error}=await supabase.from("information").update({
               offline:true
-            }).eq("id",id)            
+            }).eq("id",id)  
+                                  
           }
   
   console.log(info)
@@ -60,12 +81,14 @@ const Detail = () => {
     }
 
     async function sellBtn(d){
-      const {data,error}=await supabase.from("information").update({
+      
+         const {data,error}=await supabase.from("information").update({
         ticket:value,
         sellPrice:d.price*value
       }).eq("id",d.id) 
       alert(`${info.cityName} alindi`)
       window.location.reload()
+      
     }
 
  async function artimFunc(d){ 
@@ -80,17 +103,26 @@ const Detail = () => {
   }
 
   async function GedisGelis(d){
-    const {data,error}=await supabase.from("information").update({
+        const {data,error}=await supabase.from("information").update({
       gedis:testGedis,
       gelis:testGelis,
     }).eq("id",d.id) 
-  }     
+    
+
+  }   
+ 
+const inpInfoFilter=inpInfo.filter((e)=>{
+      if(e.qeydiyyat===true){
+        return info
+      }
+})
       return (
         <div>
-            <Navbar/>
-            {info.map((e)=>{
+            <ModeNav inpInfo={inpInfo}/>
+            {inpInfoFilter.map(()=>{
+             return  info.map((e)=>{
                 if(e.id==id){
-                   return <div key={e.id} className='detail_map'>
+                 return <div key={e.id} className='detail_map'>
                         <div className="detail_img-div">
                             <img className="detail_img"  src={e.img} alt="" />
                         </div>
@@ -124,8 +156,12 @@ const Detail = () => {
 
                     </div>
                 }
-            })}
-
+            }) 
+                      
+            })
+            }
+            
+          <h1 className={mesaj==false?'mesaj_none':"mesaj_block"}>hello</h1>
             <Footer/>
         </div>
       )

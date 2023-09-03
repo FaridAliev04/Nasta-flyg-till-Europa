@@ -1,12 +1,34 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useState,useEffect } from 'react'
+import {CgProfile} from "react-icons/cg"
 
-const AboutNav = () => {
+const AboutNav = ({inpInfo}) => {
+    const [mode,setMode]=useState(localStorage.getItem("mode"))
+    useEffect(() => {
+      if(localStorage.getItem("mode")==undefined){
+        setMode("light")
+        localStorage.setItem("mode","light")
+      }
+      localStorage.setItem("mode",mode)
+      document.body.className=localStorage.getItem("mode")
+    }, []);
+  
+    const modeFunc=()=>{
+      if(mode=="light"){
+        setMode("dark")
+      }else{
+        setMode("light")
+      }
+      localStorage.setItem("mode",mode)
+      document.body.className=localStorage.getItem("mode")
+    }
+   
   return (
     <nav>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
-            <NavLink to="/" className="nav_logo-header_link  aboutNav_li-link">
+            <NavLink to="/hem" className="nav_logo-header_link  aboutNav_li-link">
                 NFE
             </NavLink>
         </h1>
@@ -14,7 +36,7 @@ const AboutNav = () => {
     <div className="nav_list">
         <ul className='nav_ul'>
             <li className='nav_li'>
-                <NavLink to="/" className="nav_li-link aboutNav_li-link">
+                <NavLink to="/hem" className="nav_li-link aboutNav_li-link">
                     Hem
                 </NavLink>
             </li>
@@ -38,12 +60,36 @@ const AboutNav = () => {
                     Favorit
                 </NavLink>
             </li>
+            {/* <li className='nav_li'>
+                <NavLink to="/" className="nav_li-link  aboutNav_li-link">
+                Registrera
+                </NavLink>
+            </li> */}
         </ul>
     </div>
-
+  
     <div className="nav_profil">  
-        {/* <img src="" alt="" />//bu hissesi qalsin evvelce bunan evvelkileri hell et sonra bunu yaz  !!!!!!!!!!  SILMEEE !!!!!!!!!!!! */}
+    
+    <img onClick={modeFunc} className='mode_svg' src={localStorage.getItem("mode")==="light"?"svg EYE MODE/light-light-mode-sun-svgrepo-com.svg":"svg EYE MODE/night-night-mode-moon-svgrepo-com.svg"} alt="" />
+
+    <div className="profil">
+        {
+            inpInfo.map((e)=>{
+                if(e.qeydiyyat===true){
+                    return <>
+                    <span><CgProfile/>{e.epost}</span>
+                    <div className="profil_none">
+                        <button>Exit</button>
+                    </div>
+                    </>
+                    
+                }
+            })
+        }
+        
     </div>
+</div>
+    
   </nav>
   )
 }

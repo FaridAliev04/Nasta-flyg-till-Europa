@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { supabase } from '@supabase/auth-ui-shared';
 import { useNavigate } from 'react-router-dom';
 import {CgProfile} from "react-icons/cg"
+import {ReactComponent as Img} from "../modeSvg/night-night-mode-moon-svgrepo-com.svg"
+import {ReactComponent as Img2} from "../modeSvg/light-light-mode-sun-svgrepo-com.svg"
 
 
-const Navbar = ({inpInfo}) => {
+const ModeNav = ({inpInfo}) => {
     const [mode,setMode]=useState(localStorage.getItem("mode"))
     useEffect(() => {
       if(localStorage.getItem("mode")==undefined){
@@ -29,7 +31,7 @@ const Navbar = ({inpInfo}) => {
   return <nav>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
-            <NavLink to="/hem" className="nav_logo-header_link">
+            <NavLink to="/hem" className="nav_logo-header_link nav_li-link-mode">
                 NFE
             </NavLink>
         </h1>
@@ -37,28 +39,28 @@ const Navbar = ({inpInfo}) => {
     <div className="nav_list">
         <ul className='nav_ul'>
             <li className='nav_li'>
-                <NavLink to="/hem" className="nav_li-link ">
+                <NavLink to="/hem" className="nav_li-link nav_li-link-mode">
                     Hem
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink to="/HandlaOm" className="nav_li-link">
+                <NavLink to="/HandlaOm" className="nav_li-link nav_li-link-mode">
                 Handla om 
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <a href="/Tures" className="nav_li-link">
+                <a href="/Tures" className="nav_li-link nav_li-link-mode">
                    Tures
                 </a>
                 
             </li>
             <li className='nav_li'>
-                <NavLink to="/SellCart" className="nav_li-link">
+                <NavLink to="/SellCart" className="nav_li-link nav_li-link-mode">
                     Vagn
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink to="/favorite" className="nav_li-link">
+                <NavLink to="/favorite" className="nav_li-link nav_li-link-mode">
                       Favorit  
                 </NavLink>
             </li>
@@ -73,12 +75,9 @@ const Navbar = ({inpInfo}) => {
 
     <div className="nav_profil">  
     
-        <img onClick={modeFunc} className='mode_svg' src={localStorage.getItem("mode")==="light"?"svg EYE MODE/light-light-mode-sun-svgrepo-com.svg":"svg EYE MODE/night-night-mode-moon-svgrepo-com.svg"} alt={mode==="light"?"light":"night"} />
-        <select id="language" name="language">
-            <option value="sv">SV</option>
-            <option value="az">AZ</option>
-            <option value="eng">EN</option>
-        </select>
+            <Img2 onClick={modeFunc} className={localStorage.getItem("mode")==="light"?'mode_svg':"mode_svg-none"}/>
+            <Img onClick={modeFunc} className={localStorage.getItem("mode")==="dark"?'mode_svg':"mode_svg-none"}/>
+
         <div className="profil">
             {
                 inpInfo.map((e)=>{
@@ -99,4 +98,4 @@ const Navbar = ({inpInfo}) => {
   </nav>
 }
 
-export default Navbar
+export default ModeNav

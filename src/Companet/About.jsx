@@ -4,11 +4,30 @@ import AboutNav from './AboutNav'
 import { Zoom,Slide } from 'react-awesome-reveal'
 import { supabase } from '../supabase'
 
-const About = () => {
-
+const About = ({inpInfo}) => {
+    // const [inpInfo,setInpInfo]=useState([])
+    // useEffect(()=>{
+    //   getDatas()
+    // },[])
+    //   console.log(inpInfo)
+      
+    //     async function getDatas() {
+    //       try {
+    //         const { data, error } = await supabase
+    //           .from("Login")
+    //           .select("*")
+    //           .limit(30);
+    //         if (error) throw error;
+    //         if (data != null) {
+    //           setInpInfo(data);
+    //         }
+    //       } catch (error) {
+    //         console.log("q");
+    //       }
+    //     } 
   return (
     <div className='about'>
-        <AboutNav/>
+        <AboutNav inpInfo={inpInfo}/>
         <div className="about-main">
             <Slide  >
                 <h1 className='about-main_header'>

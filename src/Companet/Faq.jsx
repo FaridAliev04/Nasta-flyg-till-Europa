@@ -8,6 +8,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { faqData } from '../Data/Faq';
+import { faqDataEng } from '../Data/Faq';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -46,10 +47,11 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Faq() {
+  const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?faqData:faqDataEng)
   return (
     <div className='faq'>
         <h1 className='fag_header'>Vanliga frågor</h1>
-         {faqData.map((e)=>{
+         {myLangData.map((e)=>{
      return <Accordion key={e.id} >
        
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">

@@ -806,3 +806,18 @@ justify-content: center;
         color: white;
     }
 }
+#language{
+    outline: none;
+    border: none;
+    background: none;
+}
+.language_flag{
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+.language_div{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+}

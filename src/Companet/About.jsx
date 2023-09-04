@@ -3,50 +3,32 @@ import Navbar from './Navbar'
 import AboutNav from './AboutNav'
 import { Zoom,Slide } from 'react-awesome-reveal'
 import { supabase } from '../supabase'
-
+import langMode from '../LangMode'
 const About = ({inpInfo}) => {
-    // const [inpInfo,setInpInfo]=useState([])
-    // useEffect(()=>{
-    //   getDatas()
-    // },[])
-    //   console.log(inpInfo)
-      
-    //     async function getDatas() {
-    //       try {
-    //         const { data, error } = await supabase
-    //           .from("Login")
-    //           .select("*")
-    //           .limit(30);
-    //         if (error) throw error;
-    //         if (data != null) {
-    //           setInpInfo(data);
-    //         }
-    //       } catch (error) {
-    //         console.log("q");
-    //       }
-    //     } 
+    const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
   return (
     <div className='about'>
         <AboutNav inpInfo={inpInfo}/>
         <div className="about-main">
             <Slide  >
                 <h1 className='about-main_header'>
-                Mer än 4 länder
+                {myLangData.about.about1}
                 </h1>
             </Slide>
             <Slide delay={200}>
                 <h1 className='about-main_header'>
-                Mer än 7 klimatzoner
+                {myLangData.about.about2}
                 </h1>
             </Slide>
             <Slide delay={300}>
                 <h1 className='about-main_header'>
-                Mer än 10 städer
+                {myLangData.about.about3}
                 </h1>
             </Slide>
             <Slide delay={400}>
                 <h1 className='about-main_header'>
-                Mer än 15 öar
+                {myLangData.about.about4}
                 </h1>
             </Slide>
         </div>

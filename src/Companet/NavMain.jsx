@@ -6,6 +6,7 @@ import { cityData } from '../CityData';
 import { NavLink } from 'react-router-dom';
 import { useState,useEffect,useRef } from 'react';
 import { supabase } from '../supabase';
+import langMode from '../LangMode';
 
 const NavMain = () => {
   
@@ -19,7 +20,7 @@ const NavMain = () => {
     localStorage.setItem("mode",mode)
     document.body.className=localStorage.getItem("mode")
   }, []);
-
+  const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
   const modeFunc=()=>{
     if(mode=="light"){
       setMode("dark")
@@ -76,7 +77,7 @@ const NavMain = () => {
       <div className='main_btn-div'>
         <NavLink to="/HandlaOm">
           <button className='main_btn'>
-            Lär dig mer
+            {myLangData.navMain.lagdigmer}
           </button>
           </NavLink>
       </div>

@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import langMode from '../LangMode'
+import { useState } from 'react'
 const Footer = () => {
+    const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
   return (
     <footer>
         <div className="foooter_top">
@@ -15,27 +19,27 @@ const Footer = () => {
                 <ul className='nav_ul footer_ul'>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                            Hem
+                            {myLangData.footer.hem}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                            Handla om
+                        {myLangData.footer.handlaOm}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink to="/Tures" className="nav_li-link footer_li-link">
-                            Tures
+                        {myLangData.footer.tures}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                             Vagn
+                        {myLangData.footer.vagn}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
                         <NavLink className="nav_li-link footer_li-link">
-                        Favorit
+                        {myLangData.footer.favorite}
                         </NavLink>
                     </li>
                 </ul>

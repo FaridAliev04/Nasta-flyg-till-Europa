@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import {CgProfile} from "react-icons/cg"
 import {ReactComponent as Img} from "../modeSvg/night-night-mode-moon-svgrepo-com.svg"
 import {ReactComponent as Img2} from "../modeSvg/light-light-mode-sun-svgrepo-com.svg"
+import langMode from '../LangMode';
 
 
 const ModeNav = ({inpInfo}) => {
@@ -28,6 +29,8 @@ const ModeNav = ({inpInfo}) => {
       localStorage.setItem("mode",mode)
       document.body.className=localStorage.getItem("mode")
     }
+    const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
   return <nav>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
@@ -40,28 +43,28 @@ const ModeNav = ({inpInfo}) => {
         <ul className='nav_ul'>
             <li className='nav_li'>
                 <NavLink to="/hem" className="nav_li-link nav_li-link-mode">
-                    Hem
+                    {myLangData.nav.hem}
                 </NavLink>
             </li>
             <li className='nav_li'>
                 <NavLink to="/HandlaOm" className="nav_li-link nav_li-link-mode">
-                Handla om 
+                {myLangData.nav.handlaOm} 
                 </NavLink>
             </li>
             <li className='nav_li'>
                 <a href="/Tures" className="nav_li-link nav_li-link-mode">
-                   Tures
+                {myLangData.nav.tures}
                 </a>
                 
             </li>
             <li className='nav_li'>
                 <NavLink to="/SellCart" className="nav_li-link nav_li-link-mode">
-                    Vagn
+                {myLangData.nav.vagn}
                 </NavLink>
             </li>
             <li className='nav_li'>
                 <NavLink to="/favorite" className="nav_li-link nav_li-link-mode">
-                      Favorit  
+                {myLangData.nav.favorite}  
                 </NavLink>
             </li>
             {/* <li className='nav_li'>
@@ -78,12 +81,17 @@ const ModeNav = ({inpInfo}) => {
             <Img2 onClick={modeFunc} className={localStorage.getItem("mode")==="light"?'mode_svg':"mode_svg-none"}/>
             <Img onClick={modeFunc} className={localStorage.getItem("mode")==="dark"?'mode_svg':"mode_svg-none"}/>
 
+            <div className="language_div">
+            <img onClick={()=>(localStorage.setItem("langMode","sv"),window.location.reload())} className='language_flag' src="flag/sweden_flag.png" alt="" />
+            <img onClick={()=>(localStorage.setItem("langMode","en"),window.location.reload())} className='language_flag' src="flag/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="" />
+        </div>
+
         <div className="profil">
             {
                 inpInfo.map((e)=>{
                     if(e.qeydiyyat===true){
                         return <>
-                        <span><CgProfile/>{e.epost}</span>
+                        <span><CgProfile/>{e.user}</span>
                         <div className="profil_none">
                             <button>Exit</button>
                         </div>

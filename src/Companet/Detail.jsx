@@ -8,6 +8,7 @@ import {BsArrowLeftRight,BsFillPersonPlusFill,BsPersonDashFill} from "react-icon
 import { useDispatch, useSelector } from 'react-redux';
 import { minus, pilus } from '../toolkit/heart';
 import ModeNav from './ModeNav';
+import langMode from '../LangMode';
 
 const Detail = () => {
   
@@ -18,6 +19,9 @@ const Detail = () => {
         const[testGelis,setTestGelis]=useState(true)
         const [test,setTest] =useState(false)
         const value=useSelector((e)=>e.name.value)
+
+        const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
 
         const dispatch=useDispatch()
         useEffect(() => {
@@ -119,8 +123,8 @@ const inpInfoFilter=inpInfo.filter((e)=>{
       return (
         <div>
             <ModeNav inpInfo={inpInfo}/>
-            {inpInfoFilter.map(()=>{
-             return  info.map((e)=>{
+            {
+               info.map((e)=>{
                 if(e.id==id){
                  return <div key={e.id} className='detail_map'>
                         <div className="detail_img-div">
@@ -128,19 +132,19 @@ const inpInfoFilter=inpInfo.filter((e)=>{
                         </div>
                         <div className="detail_sell">
                             <div className="detail_sell-infomation">
-                                <h1 className='detail_sell-name'>{e.cityName}</h1>
+                                <h1 className='detail_sell-name'>{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>
                                 <p className='detail_sell-text'>{e.text}</p>
                                 <p className='detail_sell-price'>{e.price}&euro;</p>
                             </div>
                             
                               <form className='detail_form'>
                                 <div className="date">
-                                  <label className='date_label' >Flyg datum</label>
+                                  <label className='date_label' >{myLangData.detail.gedis}</label>
                                   <input onChange={(e)=>setTestGedis(e.target.value)} type="date"  className='date_input' />
                                 </div>
                                 <BsArrowLeftRight className='date_icons'/>
                                 <div className="date">
-                                  <label className='date_label'>Återlämningsdatum</label>
+                                  <label className='date_label'>{myLangData.detail.gelis}</label>
                                   <input onChange={(e)=>setTestGelis(e.target.value)} type="date" className='date_input' />
                                 </div>
                               </form>
@@ -151,14 +155,13 @@ const inpInfoFilter=inpInfo.filter((e)=>{
                               <button onClick={()=>artimFunc(e) }className='person_number-btn'><BsFillPersonPlusFill className='person_number-icons'/></button>
                             </div>
 
-                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e),GedisGelis(e))}>Köpa</button>
+                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e),GedisGelis(e))}>{myLangData.detail.detailBtn}</button>
                         </div>
 
                     </div>
                 }
             }) 
                       
-            })
             }
             
           <h1 className={mesaj==false?'mesaj_none':"mesaj_block"}>hello</h1>
@@ -170,3 +173,4 @@ const inpInfoFilter=inpInfo.filter((e)=>{
 }
 
 export default Detail
+

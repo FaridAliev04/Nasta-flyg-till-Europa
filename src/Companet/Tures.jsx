@@ -143,6 +143,8 @@ setInfo(priceSortAZ)
               return e
             } else if(e.cityName.includes(search)){
               return e
+            }else if(e.cityNameEng.includes(search)){
+              return e
             }
           }).map((e)=>{
             if(e.id<=valueId){

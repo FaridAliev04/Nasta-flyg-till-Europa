@@ -73,6 +73,18 @@ const langMode={
                 search:"vänligen ange land eller stad",
                 azCox:"Lägsta pris",
                 coxAz:"Högsta priset"
+        },
+        detail:{
+                gedis:"Flyg datum",
+                gelis:"Återlämningsdatum",
+                detailBtn:"Köpa"
+        },
+        sellCart:{
+                sellCartMesaj:"Det finns inget på korte",
+                sellCartBtn:"att betala"
+        },
+        favorite:{
+                favoriteMesaj:"Det står inget på favoriten"
         }
             
         },
@@ -141,8 +153,19 @@ const langMode={
                 search:"please enter country or city",
                 azCox:"Lowest price",
                 coxAz:"Highest price"
+        },
+        detail:{
+                gedis:"Flight date",
+                gelis:"Return date",
+                detailBtn:"Buy"
+        },
+        sellCart:{
+                sellCartMesaj:"There is nothing on the cards",
+                sellCartBtn:"to pay"
+        },
+        favorite:{
+                favoriteMesaj:"There is nothing on the favorite"
         }
-
             
             
     

@@ -4,12 +4,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import {IoMdPerson} from "react-icons/io"
 import {BsArrowLeftRight} from "react-icons/bs"
 import {Slide} from "react-awesome-reveal"
+import langMode from '../LangMode';
 
 const SellCart = () => {
     const [info,setInfo]=useState([])
     const [offline,setOffline]=useState([])
     const value=useSelector((e)=>e.name.value)
     const dispatch=useDispatch()
+    const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
     useEffect(() => {
         getData();
       }, []);
@@ -54,13 +57,13 @@ const SellCart = () => {
     
   return (
     <div className='sellCart_div'>
-      {filter.length===0?<h1 className='filter_not-favorite'>Det finns inget på kortet</h1>:filter.map((e)=>{ 
+      {filter.length===0?<h1 className='filter_not-favorite'>{myLangData.sellCart.sellCartMesaj}</h1>:filter.map((e)=>{ 
         return<Slide>
         <div className='sellCart'>
           <img className='sellCart-img' src={e.img} alt="" />
           <div className="sellCart_info">
             <div className="sellCart_info-box">
-              <h1 className='sell_cart-header'>{e.cityName}</h1>
+              <h1 className='sell_cart-header'>{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>
               <h1 className='sell_cart-header_ticket'>{e.ticket } <div className="sell_cart-header_icons-div">
                 <IoMdPerson className="sell_cart-header_icons"/>
                 </div></h1>
@@ -77,7 +80,7 @@ const SellCart = () => {
             </div>
             
             <div className="sellCart_info-div_btn">
-              <button onClick={()=>zeroInfo(e)} className='sellCart_info-btn'>att betala</button>
+              <button onClick={()=>zeroInfo(e)} className='sellCart_info-btn'>{myLangData.sellCart.sellCartBtn}</button>
             </div>
           </div>
         </div>

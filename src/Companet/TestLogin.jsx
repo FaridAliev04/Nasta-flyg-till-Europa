@@ -32,16 +32,92 @@
 // export default TestLogin
 
 import React from 'react'
+import { useState,useEffect } from 'react'
+import { supabase } from '../supabase'
+import { Link } from 'react-router-dom'
 
 const TestLogin = () => {
+  const[user,setUser]=useState()
+  const [fullName,setFullName]=useState()
+  const [password,setPassword]=useState()
+  const [email,setEmail]=useState()
+  const[nickName,setNickName]=useState()
+  const [errorEmail,setErrorEmail]=useState(false)
+  const [errorPassword,setErrorPassword]=useState(false)
 
-  return (
-    <div>
-      <div className="inp_div">
-        <input type="text" name="" id="" />
-      </div>
-    </div>
-  )
+  const [inpInfo,setInpInfo]=useState([])
+  useEffect(() => {
+    getData();
+  }, []);
+
+  async function getData() {
+    try {
+      const { data, error } = await supabase
+        .from("Login")
+        .select("*")
+        .limit(30);
+      if (error) throw error;
+      if (data != null) {
+        setInpInfo(data);
+      }
+    } catch (error) {
+      console.log("q");
+    }
+  }
+  async function createSignIn(){
+    try{
+        const {data,error}=await supabase.from("Login").insert({user:user,epost:email,password:password}).single()
+        if(error) throw error
+        
+    }catch (error){
+        console.log("error")
+    }
+
+}
+
+  async function handleSubmit(e){
+    e.preventDefault()
+    createSignIn()
+    const {data,error}=await supabase.auth.signUp({
+      email:email,
+      password:password,
+      options:{
+        data:{
+          name:user
+        }
+      }
+    })
+  }
+
+  return ( <div className='login'>
+  <video className='nav_main-video' autoPlay loop muted playsInline src="background/149980 (Original).mp4"></video>
+  
+  {
+       <form onSubmit={handleSubmit} action="">
+        <div className="inp_div">
+          <label htmlFor="">User Name</label>
+          <input onChange={(e)=>setUser(e.target.value)} type="text" name="user" />
+        </div>
+        <div className="inp_div">
+          <label htmlFor="">Password</label>
+          <input onChange={(e)=>setPassword(e.target.value)} type="password" name="password" />
+        </div>
+        <div className="inp_div">
+          <label htmlFor="">Email</label>
+          <input onChange={(e)=>setEmail(e.target.value)} type="email" name="email" />
+        </div>
+        <Link to="/signin">sign in</Link>
+        <button>Sign In</button>
+       </form>
+     
+   
+  
+
+  }
+  
+
+</div>
+)
 }
 
 export default TestLogin

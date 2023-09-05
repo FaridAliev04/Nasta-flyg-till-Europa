@@ -49,9 +49,9 @@ const AboutNav = ({inpInfo}) => {
                 </NavLink>
             </li>
             <li className='nav_li'>
-                <NavLink to="/Tures" className="nav_li-link  aboutNav_li-link">
+                <a href="/Tures" className="nav_li-link  aboutNav_li-link">
                 {myLangData.nav.tures}
-                </NavLink>
+                </a>
             </li>
             <li className='nav_li'>
                 <NavLink to="/SellCart" className="nav_li-link  aboutNav_li-link">
@@ -85,7 +85,7 @@ const AboutNav = ({inpInfo}) => {
             inpInfo.map((e)=>{
                 if(e.qeydiyyat===true){
                     return <>
-                    <span><CgProfile/>{e.epost}</span>
+                    <span><CgProfile/>{e.user}</span>
                     <div className="profil_none">
                         <button>Exit</button>
                     </div>

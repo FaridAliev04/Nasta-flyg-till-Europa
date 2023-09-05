@@ -13,19 +13,34 @@ import { Favorite } from '@mui/icons-material';
 import CoFavorite from './comps/CoFavorite';
 import Login from './Companet/Login';
 import CoLogin from './comps/CoLogin';
-
+// import SignUp from "./Companet/SignUp"
+import  SignUp from "./Companet/SignUp"
 function App() {
 
+  const [token,setToken]=useState(false)
+  if(token){
+    sessionStorage.setItem("token",JSON.stringify(token))
+  }
+  useEffect(()=>{
+    if(sessionStorage.getItem("token")){
+      let data=JSON.parse(sessionStorage.getItem("tokem"))
+      setToken(data)
+    }
+  },[])
+
+console.log(token)
   return <Fragment>
     <BrowserRouter>
-      <Routes>
-        <Route path='/hem' element={<CoHome/>}/>
-        <Route path='/HandlaOm' element={<CoAbout/>}/>
+      <Routes>      
+        <Route path='/' element={<CoLogin/>}/>
+        <Route path='/signin' element={<SignUp setToken={setToken}/>}/>
         <Route path='/Tures' element={<CoTures/>}/>
         <Route path='card/detail/:id' element={<Detail/>}/>
+        <Route path='/hem' element={<CoHome/>}/>
+        <Route path='/HandlaOm' element={<CoAbout/>}/>
         <Route path='/SellCart' element={<CoSellCart/>}/>
-        <Route path='/favorite' element={<CoFavorite/>}/>
-        <Route path='/' element={<CoLogin/>}/>
+       <Route path='/favorite' element={<CoFavorite/>}/>
+
       </Routes>
     </BrowserRouter>
   </Fragment>;

@@ -32,7 +32,7 @@ nav{
 .nav_ul{
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 .nav_li-link{
     
@@ -501,10 +501,11 @@ footer{
     margin-top: 5rem;
 }
 .filter_not-favorite{
+    font-size: 3.5rem;
     width: 100%;
     color: #e91e63;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     height: 20rem;
@@ -735,8 +736,12 @@ justify-content: center;
 .mode_svg-none{
     display: none;
 }
+.light{
+    transition: 1s;
+}
 .dark{
         background-color:  rgb(70, 70, 70) ;  
+        transition: 1s;
    
     .info{
         background-color: rgb(70, 70, 70) ;

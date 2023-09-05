@@ -5,10 +5,12 @@ import { useState,useEffect } from 'react'
 import { supabase } from '../supabase'
 import { useNavigate } from 'react-router-dom'
 import { Roll } from 'react-awesome-reveal'
+import langMode from '../LangMode'
 const Favorite = () => {
     const [info,setInfo]=useState([])
     const [test,setTest]=useState(false)
     const navigate=useNavigate()
+    const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
     useEffect(() => {
         getData();
       }, []);
@@ -47,7 +49,7 @@ const Favorite = () => {
     }
   return (
     <div className='tures_info-map'>
-   {filter.length===0?<h1 className='filter_not-favorite'>Du har ingen favorit</h1>:
+   {filter.length===0?<h1 className='filter_not-favorite'>{myLangData.favorite.favoriteMesaj}</h1>:
       filter.map((e)=>{
         return (<Roll>
           <div key={e.id} className="tures_cart">
@@ -60,10 +62,10 @@ const Favorite = () => {
               />
             </div>
             <div className="tures_cart-texts">
-              <h1 className="tures_cart-name">{e.cityName}</h1>
+              <h1 className="tures_cart-name">{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>
               <p className="tures_cart-price">{e.price}&euro;</p>
               <div className="tures_cart-allBtn">
-                <button className="tures_cart-btn" onClick={() => navigate(`/card/detail/${e.id}`)}>köp en biljett</button>
+                <button className="tures_cart-btn" onClick={() => navigate(`/card/detail/${e.id}`)}>{myLangData.tures.turesBtn}</button>
                 <div className="tures_cart-heart-btn">
                   <img onClick={()=>(favoriteTestFalse(e))} className={e.favorite===true?"tures_cart-icon":"tures_cart-icon-none"} src="svg/heart-check-svgrepo-com (1).svg" alt="" />                  
                 </div>

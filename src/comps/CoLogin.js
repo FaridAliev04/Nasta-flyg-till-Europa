@@ -5,7 +5,7 @@ import TestLogin from '../Companet/TestLogin'
 const CoLogin = () => {
   return (
     <div>
-        <Login/>
+        <TestLogin/>
     </div>
   )
 }

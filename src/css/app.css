@@ -9,6 +9,10 @@ input {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul {
   list-style-type: none;
 }
@@ -733,8 +737,13 @@ footer {
 .sellCart_info-div_btn {
   margin-left: 2rem;
   display: flex;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+.reviews-icons {
+  color: white;
 }
 
 .sell_cart-header {
@@ -852,8 +861,7 @@ footer {
 }
 
 .nav_profil {
-  display: flex;
-  gap: 1rem;
+  margin-top: 0.2rem;
 }
 
 .mode_svg-none {
@@ -875,6 +883,9 @@ footer {
 .dark .information {
   transition: 1s;
   background-color: rgb(70, 70, 70);
+  color: white;
+}
+.dark .reviews_header {
   color: white;
 }
 .dark .info_category {
@@ -952,4 +963,359 @@ footer {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.7rem;
+}
+
+.sellCart_info-delete {
+  color: red;
+}
+
+.thankyou {
+  display: none;
+}
+
+.thankyou_block {
+  display: block;
+  transition: 1s;
+}
+
+.thankyou_jsx-div {
+  display: flex;
+  gap: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #023047;
+  width: auto;
+  padding: 7px 15px;
+  transition: 1s;
+}
+
+.thankYou_header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: green;
+}
+
+.thankYou_icons {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: green;
+}
+
+.adminpanel_infoAdd {
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.adminpanel_inp-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.adminpanel_label {
+  color: #e91e63;
+}
+
+.adminPanel_btn {
+  cursor: pointer;
+  padding: 2px 22px;
+  color: #e91e63;
+  background: white;
+  border: 1px solid;
+}
+
+.adminpanel_inp {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.info_crud-btn {
+  cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+}
+
+.info_crud-delete {
+  background-color: red;
+  color: white;
+}
+
+.info_crud-update {
+  background-color: #dda15e;
+  color: black;
+}
+
+.update_info-div {
+  width: 400px;
+  height: 363px;
+  border-radius: 12px;
+  background-color: #bde0fe;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 15px 15px;
+}
+
+.info_crud-none {
+  color: red;
+}
+
+.uptate-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminPanel_div {
+  margin-top: 4rem;
+}
+
+.adminpanel_infoAdd {
+  width: 80%;
+  margin: 0 auto;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.person-img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border: 4px solid var(--clr-grey-8);
+  box-shadow: var(--dark-shadow);
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+.section-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  /* have to have a height */
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: var(--clr-grey-5);
+  color: var(--clr-white);
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.prev {
+  left: 25px;
+}
+
+.next {
+  right: 25px;
+}
+
+.reviews-icons {
+  width: 3rem;
+  height: 3rem;
+  color: black;
+}
+
+.reviews_country {
+  font-size: 1.3rem;
+  color: #e91e63;
+}
+
+.reviews_btn {
+  margin-top: 1rem;
+}
+
+.profil_lognOut {
+  position: absolute;
+  right: 0;
+}
+
+.profil {
+  position: relative;
+}
+
+.profil_lognOut {
+  position: absolute;
+  display: none;
+}
+
+.profil_lognOut-block {
+  position: absolute;
+  display: block;
+  right: 0;
+  padding: 13px 20px;
+  background-color: #1e6091;
+  z-index: 9999;
+  width: auto;
+  min-width: 6.7rem;
+}
+
+.profil_email {
+  font-size: 1rem;
+  padding: 9px 20px;
+  border: none;
+  background-color: #1e6091;
+  color: white;
+}
+
+.user_hr {
+  margin-top: 0.5rem;
+}
+
+.profil_img {
+  margin-top: 0.5rem;
+}
+
+.lognOut-btn {
+  margin-top: 0.5rem;
+  padding: 3px 6px;
+  border: none;
+  background: cornflowerblue;
+  color: white;
+}
+
+.user_email {
+  color: white;
+}
+
+.resigter_form {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  width: 22rem;
+  margin-left: 7rem;
+  padding: 2rem 2rem;
+  height: 19rem;
+}
+
+.inp_div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.password_eye {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: 1.4rem;
+}
+
+.inp_div-inp {
+  padding: 5px 10px;
+  border-radius: 9px;
+  border: 0.4px solid black;
+}
+
+.form_btn {
+  font-size: 1rem;
+  padding: 3px;
+  border: none;
+  background: cornflowerblue;
+  border-radius: 18px;
+  color: white;
+}
+
+.form_btn-register {
+  background-color: black;
+}
+
+@media screen and (min-width: 1800px) {
+  .nav_li-link {
+    font-size: 1.7rem;
+  }
+  .nav_list {
+    margin-top: 1.4rem;
+  }
+  .nav_logo-header_link {
+    font-size: 3rem;
+  }
+  .language_flag {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .mode_svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .information_box {
+    width: 80%;
+  }
+  .data-img {
+    width: 50rem;
+  }
+  .info_texts {
+    width: 32rem;
+    font-size: 1.4rem;
+  }
+  .info_category {
+    font-size: 2.7rem;
+  }
+  .info-vare {
+    font-size: 1.5rem;
+  }
+  .sponsor_img {
+    width: 17rem;
+    height: 9rem;
+  }
+  .support_header {
+    font-size: 3rem;
+  }
+  .footer_bottom-span {
+    font-size: 1.2rem;
+  }
+  .main_btn-div {
+    width: 13%;
+  }
 }/*# sourceMappingURL=app.css.map */

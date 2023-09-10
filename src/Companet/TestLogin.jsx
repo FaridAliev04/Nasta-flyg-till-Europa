@@ -1,49 +1,19 @@
-// import React from 'react'
-// import AboutNav from './AboutNav'
-// import { Auth } from '@supabase/auth-ui-react'
-// import { supabase } from '../supabase'
-// import { useNavigate } from 'react-router-dom'
-// import { ThemeSupa } from '@supabase/auth-ui-shared'
-// // import { ThemeSupa } from '@supabase/auth-ui-shared'
-// const TestLogin = () => {
-//   const navigate=useNavigate()
-// supabase.auth.onAuthStateChange(async(event)=>{
-//   if(event !=="SIGNED_OUT"){
-//      navigate('/')
-//   }else{
-//     navigate("/hem")
-//   } 
-// })
-//   return (
-//     <div>
-//        <video className='nav_main-video' autoPlay loop muted playsInline src="background/149980 (Original).mp4"></video>
-       
-//         <div className="form">
-//           <Auth 
-//           supabaseClient={supabase}
-//           appearance={{them:ThemeSupa}}
-//           />
-//         </div>
-
-//     </div>
-//   )
-// }
-
-// export default TestLogin
-
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { supabase } from '../supabase'
 import { Link } from 'react-router-dom'
+import ModelNav from "./ModeNav"
+import SignUp from "./SignUp"
+import langMode from '../LangMode';
 
 const TestLogin = () => {
   const[user,setUser]=useState()
-  const [fullName,setFullName]=useState()
   const [password,setPassword]=useState()
   const [email,setEmail]=useState()
-  const[nickName,setNickName]=useState()
-  const [errorEmail,setErrorEmail]=useState(false)
-  const [errorPassword,setErrorPassword]=useState(false)
+const [passwordType,setPasswordType]=useState("password")
+  const [signin,setSignin]=useState(true)
+  const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
+
 
   const [inpInfo,setInpInfo]=useState([])
   useEffect(() => {
@@ -64,21 +34,18 @@ const TestLogin = () => {
       console.log("q");
     }
   }
-  async function createSignIn(){
-    try{
-        const {data,error}=await supabase.from("Login").insert({user:user,epost:email,password:password}).single()
-        if(error) throw error
+//   async function createSignIn(){
+//     try{
+//         const {data,error}=await supabase.from("Login").insert({user:user,epost:email,password:password}).single()
+//         if(error) throw error
         
-    }catch (error){
-        console.log("error")
-    }
+//     }catch (error){
+//         console.log("error")
+//     }
 
-}
-
-  async function handleSubmit(e){
-    e.preventDefault()
-    createSignIn()
-    const {data,error}=await supabase.auth.signUp({
+// }
+async function Signin(){
+  const {data,error}=await supabase.auth.signUp({
       email:email,
       password:password,
       options:{
@@ -87,28 +54,42 @@ const TestLogin = () => {
         }
       }
     })
+}
+  async function handleSubmit(e){
+    e.preventDefault()
+
+    
+  }
+  const passwordEye=()=>{
+    if(passwordType==="password"){
+      setPasswordType("text")
+    }else{
+      setPasswordType("password")
+    }
   }
 
   return ( <div className='login'>
   <video className='nav_main-video' autoPlay loop muted playsInline src="background/149980 (Original).mp4"></video>
-  
-  {
-       <form onSubmit={handleSubmit} action="">
+  <ModelNav/>
+  { signin===true?
+       <form className='resigter_form' onSubmit={handleSubmit} action="">
         <div className="inp_div">
-          <label htmlFor="">User Name</label>
-          <input onChange={(e)=>setUser(e.target.value)} type="text" name="user" />
+          <label htmlFor="">{myLangData.register.user}</label>
+          <input onChange={(e)=>setUser(e.target.value)} className='inp_div-inp' type="text" name="user" />
         </div>
         <div className="inp_div">
-          <label htmlFor="">Password</label>
-          <input onChange={(e)=>setPassword(e.target.value)} type="password" name="password" />
+          <label htmlFor="">{myLangData.register.password}</label>
+          <input onChange={(e)=>setPassword(e.target.value)} className='inp_div-inp' type={passwordType} name="password" />
+          <img onClick={()=>passwordEye()} className='password_eye' src="svg EYE MODE/eye-key-look-password-security-see-svgrepo-com.svg" alt="" />
         </div>
         <div className="inp_div">
-          <label htmlFor="">Email</label>
-          <input onChange={(e)=>setEmail(e.target.value)} type="email" name="email" />
+          <label htmlFor="">{myLangData.register.email}</label>
+          <input onChange={(e)=>setEmail(e.target.value)} className='inp_div-inp' type="email" name="email" />
         </div>
-        <Link to="/signin">sign in</Link>
-        <button>Sign In</button>
-       </form>
+        <button onClick={()=>Signin()} className='form_btn form_btn-register'>{myLangData.register.register}</button>
+        <button className='form_btn' onClick={()=>setSignin(false)}>{myLangData.register.logIn}</button>
+        
+       </form>:<SignUp setSignin={setSignin}/>
      
    
   

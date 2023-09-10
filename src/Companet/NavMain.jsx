@@ -7,10 +7,12 @@ import { NavLink } from 'react-router-dom';
 import { useState,useEffect,useRef } from 'react';
 import { supabase } from '../supabase';
 import langMode from '../LangMode';
+import { useNavigate } from 'react-router-dom';
 
 const NavMain = () => {
   
   const [mode,setMode]=useState(localStorage.getItem("mode"))
+  const navigate=useNavigate()
   useEffect(() => {
     getDatas();
     if(localStorage.getItem("mode")==undefined){
@@ -49,6 +51,17 @@ const NavMain = () => {
           console.log("q");
         }
       } 
+      supabase.auth.onAuthStateChange(async(event)=>{
+        if(event =="SIGNED_IN"){
+           navigate("/")
+        }
+       else if(event=="SIGNED_OUT") {
+          navigate('/')
+        } 
+      })
+      async function signOut(){
+        const {error}=await supabase.auth.signOut()
+    }
 
   return <div className="nav_main">
     <video className='nav_main-video' autoPlay loop muted playsInline  src="background/videoBg2.mp4"></video>
@@ -76,12 +89,13 @@ const NavMain = () => {
       </div>
       <div className='main_btn-div'>
         <NavLink to="/HandlaOm">
-          <button className='main_btn'>
+          <button  className='main_btn'>
             {myLangData.navMain.lagdigmer}
           </button>
           </NavLink>
       </div>
     </div>
+
   </div>
 }
 

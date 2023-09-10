@@ -18,12 +18,12 @@ const Footer = () => {
             <div className="nav_list">
                 <ul className='nav_ul footer_ul'>
                     <li className='nav_li'>
-                        <NavLink className="nav_li-link footer_li-link">
+                        <NavLink to="/" className="nav_li-link footer_li-link">
                             {myLangData.footer.hem}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
-                        <NavLink className="nav_li-link footer_li-link">
+                        <NavLink to="/HandlaOm" className="nav_li-link footer_li-link">
                         {myLangData.footer.handlaOm}
                         </NavLink>
                     </li>
@@ -33,12 +33,12 @@ const Footer = () => {
                         </NavLink>
                     </li>
                     <li className='nav_li'>
-                        <NavLink className="nav_li-link footer_li-link">
+                        <NavLink to="/SellCart" className="nav_li-link footer_li-link">
                         {myLangData.footer.vagn}
                         </NavLink>
                     </li>
                     <li className='nav_li'>
-                        <NavLink className="nav_li-link footer_li-link">
+                        <NavLink to="/favorite" className="nav_li-link footer_li-link">
                         {myLangData.footer.favorite}
                         </NavLink>
                     </li>

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useState,useEffect } from 'react';
-import { supabase } from '../supabase';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -8,6 +7,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { faqData } from '../Data/Faq';
+import langMode from '../LangMode';
 import { faqDataEng } from '../Data/Faq';
 
 const Accordion = styled((props) => (
@@ -47,10 +47,11 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Faq() {
+  const [langData,setLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
   const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?faqData:faqDataEng)
   return (
     <div className='faq'>
-        <h1 className='fag_header'>Vanliga frågor</h1>
+        <h1 className='fag_header'>{langData.fag.fagHeader}</h1>
          {myLangData.map((e)=>{
      return <Accordion key={e.id} >
        

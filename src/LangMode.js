@@ -3,7 +3,7 @@ const langMode={
         nav:{hem:"Ana Səhifə",
             handlaOn :"Haqqımızda",
             tures:"Turlar",
-            vagn:"Kart",
+            vagn:"Kort",
             favorite:"Bəyəndiklərim",
         },
         navMain:{
@@ -16,8 +16,10 @@ const langMode={
              hem:'Hem',
             handlaOm:"Handla om",
             tures:"Tures",
-            vagn:"Vagn",
-            favorite:"Favorite" ,   
+            vagn:"Kort",
+            favorite:"Favorite" , 
+            login:"Registrera"  ,
+            adminPanel:"Adminpanel"
         },
         navMain:{
              lagdigmer:"Lär dig mer",   
@@ -38,7 +40,7 @@ const langMode={
                 hem:'Hem',
             handlaOm:"Handla om",
             tures:"Tures",
-            vagn:"Vagn",
+            vagn:"Kort",
             favorite:"Favorite" ,
         } ,
         about:{
@@ -77,14 +79,45 @@ const langMode={
         detail:{
                 gedis:"Flyg datum",
                 gelis:"Återlämningsdatum",
-                detailBtn:"Köpa"
+                detailBtn:"Köpa",
+                detailThankYou:'Se "Kort" för att betala'
         },
         sellCart:{
                 sellCartMesaj:"Det finns inget på korte",
-                sellCartBtn:"att betala"
+                sellCartBtn:"att betala",
+                sellCartThankYou:"Tack för att du väljer oss"
         },
         favorite:{
                 favoriteMesaj:"Det står inget på favoriten"
+        },
+        adminPanel:{
+                cityNameEng:"Stadsnamn (ENG)",
+                cityNameSv:"Stadsnamn (SV)",
+                imgLink:"BILD länk",
+                countryNameEng:"Landsnamn (ENG)",
+                countryNameSv:"Landsnamn (SV)",
+                flagLink:"Flaggan länk",
+                ticketPrice:"Biljettpris",
+                adminPanelBtn:"Lägg till",
+                deleteBtb:"Radera",
+                uptateBtn:"Uppdatering"
+        },
+        fag:{
+                fagHeader:"Vanliga frågor"
+        },
+        reviews:{
+                reviewsHeader:"recensioner"
+        },
+        profile:{
+                profil:"Profil",
+                logOut:"Logga ut"
+        },
+        register:{
+                register:"Registrera",
+                logIn:"Logga in",
+                user:"Användare",
+                email:"E-post",
+                password:"Lösenord"
         }
             
         },
@@ -95,7 +128,9 @@ const langMode={
             handlaOm:"About",
             tures:"Tours",
             vagn:"Cart",
-            favorite:"Favorite",  
+            favorite:"Favorite", 
+            login:"Register" ,
+            adminPanel:"Admin Panel" 
         },
         navMain:{
               lagdigmer:"Learn more",  
@@ -157,15 +192,49 @@ const langMode={
         detail:{
                 gedis:"Flight date",
                 gelis:"Return date",
-                detailBtn:"Buy"
+                detailBtn:"Buy",
+                detailThankYou:'See "Card" to pay'
         },
         sellCart:{
                 sellCartMesaj:"There is nothing on the cards",
-                sellCartBtn:"to pay"
+                sellCartBtn:"to pay",
+                sellCartThankYou:"Thank you for choosing us"
         },
         favorite:{
                 favoriteMesaj:"There is nothing on the favorite"
+        },
+        adminPanel:{
+                cityNameEng:"City name (ENG)",
+                cityNameSv:"City name (SV)",
+                imgLink:"IMG link",
+                countryNameEng:"Country name (ENG)",
+                countryNameSv:"Country name (SV)",
+                flagLink:"Flag link",
+                ticketPrice:"Ticket price",
+                adminPanelBtn:"Add",
+                deleteBtb:"Delete",
+                uptateBtn:"Uptate",
+
+        },
+        fag:{
+                fagHeader:"Frequently Asked Questions"
+        },
+        reviews:{
+                reviewsHeader:"reviews"
+        },
+        profile:{
+                profil:"Profile",
+                logOut:"Log Out"
+        },
+        register:{
+                register:"Register",
+                logIn:"Log in",
+                user:"User",
+                email:"Email",
+                password:"Password"
         }
+
+
             
             
     

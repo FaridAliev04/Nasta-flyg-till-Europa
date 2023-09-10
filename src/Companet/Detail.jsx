@@ -9,7 +9,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { minus, pilus } from '../toolkit/heart';
 import ModeNav from './ModeNav';
 import langMode from '../LangMode';
-
+import DetailThankYou from './DetailThankYou';
+import Reviews from './Reviews';
 const Detail = () => {
   
     const {id} = useParams()
@@ -19,6 +20,7 @@ const Detail = () => {
         const[testGelis,setTestGelis]=useState(true)
         const [test,setTest] =useState(false)
         const value=useSelector((e)=>e.name.value)
+        const [thankyou,setThankyou]=useState(true)
 
         const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
 
@@ -74,13 +76,16 @@ const Detail = () => {
 
 
   async function azalmaFunc(d){ 
-    setInfo(info.map((e)=>{
+    if(id==d.id){
+      setInfo(info.map((e)=>{
       if(d.id===e.id){
         
         dispatch(minus())
       }
       return e
     }))
+    }
+    
     setTest(true)
     }
 
@@ -90,19 +95,19 @@ const Detail = () => {
         ticket:value,
         sellPrice:d.price*value
       }).eq("id",d.id) 
-      alert(`${info.cityName} alindi`)
-      window.location.reload()
       
     }
 
  async function artimFunc(d){ 
-  setInfo(info.map((e)=>{
-    if(d.id===e.id){
-      
+  if(d.id==id){
+     setInfo(info.map((e)=>{
+    if(d.id==e.id){  
       dispatch(pilus())
     }
     return e
   }))
+  }
+ 
   setTest(true)
   }
 
@@ -114,8 +119,13 @@ const Detail = () => {
     
 
   }   
- 
-const inpInfoFilter=inpInfo.filter((e)=>{
+  const thankYouFunc=()=>{
+    setThankyou(false)
+  }
+ setTimeout(()=>{
+      setThankyou(true)
+    },7000)
+    const inpInfoFilter=inpInfo.filter((e)=>{
       if(e.qeydiyyat===true){
         return info
       }
@@ -123,6 +133,9 @@ const inpInfoFilter=inpInfo.filter((e)=>{
       return (
         <div>
             <ModeNav inpInfo={inpInfo}/>
+            <div className={thankyou==true?"thankyou":"thankyou_blok"}>
+              <DetailThankYou/>
+            </div> 
             {
                info.map((e)=>{
                 if(e.id==id){
@@ -155,7 +168,7 @@ const inpInfoFilter=inpInfo.filter((e)=>{
                               <button onClick={()=>artimFunc(e) }className='person_number-btn'><BsFillPersonPlusFill className='person_number-icons'/></button>
                             </div>
 
-                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e),GedisGelis(e))}>{myLangData.detail.detailBtn}</button>
+                            <button className='detail_btn' onClick={()=>(online(),sellBtn(e),GedisGelis(e),thankYouFunc())}>{myLangData.detail.detailBtn}</button>
                         </div>
 
                     </div>
@@ -163,9 +176,8 @@ const inpInfoFilter=inpInfo.filter((e)=>{
             }) 
                       
             }
-            
-          <h1 className={mesaj==false?'mesaj_none':"mesaj_block"}>hello</h1>
-            <Footer/>
+            <Reviews/>
+              <Footer/>
         </div>
       )
     

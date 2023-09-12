@@ -1094,7 +1094,8 @@ article {
     background-color: black;
 }
 
-  @media screen and (min-width:1800px) {
+
+  @media (min-width:1800px) and (max-width:2100px) {
     .nav_li-link{
         font-size: 1.7rem;
     }
@@ -1128,10 +1129,10 @@ article {
     .info-vare {
         font-size: 1.5rem;
     }
-    .sponsor_img {
-        width: 17rem;
-        height: 9rem;
-    }
+    // .sponsor_img {
+    //     width: 17rem;
+    //     height: 9rem;
+    // }
     .support_header{
         font-size: 3rem;
     }
@@ -1141,4 +1142,525 @@ article {
     .main_btn-div{
         width: 13%;
     }
+    .about-main_header{
+        font-size: 3rem;
+    }
+    .about_main-flag_img{
+        width: 35rem;
+        height: 45rem;
+    }
+    .about_main-flag_name{
+        font-size: 3rem;
+    }
+    .about_main-flag-text{
+        width: 33rem;
+        font-size: 1.4rem;
+    }
+    .airAbout_img{
+        width: 39rem;
+        height: 29rem;
+    }
+    .airAbout_name{
+        font-size: 3rem;
+    }
+    .airAbout_texts{
+        width: 38rem;
+        font-size: 1.4rem;
+    }
+    .about_main-link-wikipedia{
+        width: 7rem;
+        font-size: 1.3rem;
+    }
+    .fag_header{
+        font-size: 2.5rem;
+    }
+    .MuiTypography-root{
+        font-size: 1.5rem !important;
+    }
+    .tures_cart-name {
+        font-size: 1.5rem;
+    }
+    .tures_cart-btn {
+        font-size: 1.3rem;
+    }
+    .tures_cart-price {
+        font-size: 2.3rem;
+    }
+    .tures_cart-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .tures_bg-inp{
+        width: 29rem;
+        height: 3.3rem;
+    }
+    .filter_header{
+        font-size: 1.7rem;
+    }
+    .sellCart_info{
+        gap: 3rem;
+    } 
+    .sellCart_info-btn {
+        padding: 12px 17px;
+        font-size: 1.5rem;
+    }
+    .sell_cart-price{
+        font-size: 2.9rem;
+    }
+    .sellCart_info-gedisgelis{
+        font-size: 2.9rem;
+    }
+    .sell_cart-header_ticket{
+        font-size: 2.9rem;
+    }
+    .sell_cart-header{
+        font-size: 2.9rem;
+    }
+    .sellCart-img {
+        width: 25rem;
+        height: 17rem;
+    }
+    .detail_img{
+        width: 47rem;
+        height: 37rem;
+    }
+    .detail_sell-name{
+        font-size: 3rem;
+    }
+    .detail_sell-price{
+        font-size: 3.5rem;
+    }
+    .date_label{
+        font-size: 2rem;
+    }
+    .date_input{
+        padding: 12px 29px;
+    }
+    .person_number-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+    }
+    .person_number {
+        font-size: 2rem;
+    }
+    .detail_btn{
+        font-size: 25px;
+    }
+    .reviews_header{
+        font-size: 2.5rem;
+    }
+    .detail_map{
+        width: 80%;
+    }
+    .resigter_form{
+        margin-top: 10rem; 
+        width: 23rem;
+        margin-left: 8rem;
+        height: 21rem;
+    }
+    .register_form-label{
+        font-size: 1.2rem;
+    }
+    .form_btn{
+        font-size: 1.4rem;
+    }
+    .password_eye{
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 1.6rem;
+    }
+    .nav_profil {
+        margin-top: 1.2rem;
+    }
+    .profil_email{
+        font-size: 1.3rem;
+    }
+    .profil_lognOut-block{
+        min-width: 7.8516rem;
+    }
   }
+
+  @media  (min-width:1500px) and (max-width:1800px){
+    .nav_li-link{
+        font-size: 1.5rem;
+    }
+    .data-img{
+        width: 43rem;
+    }
+    .info_texts{
+        width: 38rem;
+        font-size: 1.5rem;
+    }
+    .about_main-flag_name {
+        font-size: 2.3rem;
+    }
+    .about_main-flag-text{
+        width: 35rem;
+        font-size: 1.3rem;
+    }
+    .about_main-link-wikipedia{
+        width: 6rem;
+        font-size: 1.1rem;
+    }
+    .airAbout_name{
+        font-size: 2.3rem;
+    }
+    .airAbout_texts{
+        font-size: 1.2rem;
+        width: 35rem;
+    }
+    .MuiTypography-root {
+        font-size: 1.3rem !important;
+    }
+    .about{
+        background-position: inherit;
+    }
+    .tures_bg{
+        background-position: inherit;
+    }
+    .resigter_form{
+        margin-top: 10rem;
+        height: 21rem;
+    }
+    .register_form-label{
+        font-size: 1.2rem;
+    }
+    .form_btn {
+        font-size: 1.1rem;
+    }
+    .nav_profil {
+margin-top: 0.6rem;}
+
+  }
+  @media  (min-width:1400px) and (max-width:1800px){
+    .detail_btn{
+        font-size: 19px;
+    }
+    .detail_sell{
+        width: 44%;
+    }
+  }
+  @media  (min-width:1300px) and (max-width:1500px){
+    .about{
+        background-position: inherit;
+    }
+    .info_texts{
+        width: 33rem;
+    }
+    .information {
+        margin-top: 19rem;
+    }
+    .tures_bg{
+        background-position: inherit;
+    }
+    .main_btn-div {
+        width: 18%;
+    }
+  }
+  @media  (min-width:1100px) and (max-width:1300px){
+    .detail_sell{
+        width: 38%;
+        gap: 2.3rem;
+    }
+
+    .main_btn-div{
+        width: 20%;
+    }
+    .date_input {
+        padding:8px 17px ;
+    }
+    .index-module_type__E-SaG{
+        color: #000000 !important;
+    }
+    .information {
+        margin-top: 12rem;
+    }
+    .respons_sellCart{
+        font-size: 1.6rem;
+    }
+    .info_texts{
+        width: auto;
+        font-size: 1rem;
+    }
+    .tures_bg{
+        background-position: inherit;
+    }
+    .detail_img {
+        width: 34rem;
+        height: 24rem;
+    }
+  }
+  @media  (min-width:1000px) and (max-width:1100px){
+    .information{
+        margin-top: 8rem;
+    }
+    .index-module_type__E-SaG{
+        color: black !important;
+    }
+    .data-img{
+        width: 26rem;
+    }
+    .info_category{
+        font-size: 1.5rem;
+    }
+    .info_texts{
+    font-size: 1rem;
+    }
+    .about{
+        background-position: inherit;
+    }
+    .info_text{
+        padding-top:11px ;
+    }
+    .main_btn-div{
+        width: 22%;
+    }
+    .about-main_header {
+        font-size: 1.7rem;
+    }
+    .airAbout_img {
+        width: 31rem;
+        height: 23rem;
+    }
+    .about_main-flag_img {
+        width: 27rem;
+        height: 37rem;
+    }
+    .tures_bg{
+        background-position: inherit;
+    }
+    .detail_img {
+        width: 30rem;
+        height: 20rem;
+    }
+    .detail_sell-name{
+        font-size: 1.7rem;
+    }
+    .detail_sell-price{
+        font-size: 2rem;
+    }
+    .date_input{
+        padding: 7px 15px;
+    }
+    .sellCart_info-box{
+        gap: 1.1rem;
+    }
+    .respons_sellCart{
+        font-size: 1.5rem;
+    }
+    .sellCart-img {
+        width: 18rem;
+        height: 12rem;
+    }
+    .resigter_form {
+        margin-top: 5rem;
+        width: 19rem;
+        margin-left: 6rem;
+        padding: 2rem 2rem;
+    }
+
+  }
+  @media  (min-width:900px) and (max-width:1000px){
+    .nav_li-link{
+        font-size: 1rem;
+    }
+    .nav_logo-header_link{
+        font-size: 1.5rem;
+    }
+    .nav_logo{
+        margin-top: 0.5rem;
+    }
+    .profil_lognOut-block{
+        min-width: 3.7rem;
+        padding: 13px 18px;
+    }
+    .main{
+        margin-top: 5rem;
+    }
+    .main_btn{
+        font-size: 1rem;
+    }
+    .main_btn-div{
+        width: 25%;
+    }
+    .profil_email{
+        padding: 5px 5px;
+        font-size: 1rem;
+    }
+    .information {
+        margin-top: 10rem;
+    }
+    .info_text {
+        padding-top: 15px;
+    }
+    .info_category{
+        font-size: 1.5rem;
+    }
+    .data-img{
+        width: 25rem;
+    }
+    .info_texts{
+        width: 24rem;
+        font-size: 0.8rem;
+    }
+    .about-main_header{
+        font-size: 1.5rem;
+    }
+    .about_main-flag_img {
+        width: 25rem;
+        height: 35rem;
+    }
+    .about_main-flag_name{
+        font-size: 1.5rem;
+    }
+    .about_main-flag-text {
+        font-size: 0.8rem;
+    }
+    .about_main-link-wikipedia{
+        font-size: 0.8rem;
+        width: 4rem;
+    }
+    .airAbout_name{
+        font-size: 1.5rem;
+    }
+    .airAbout_texts{
+        font-size: 0.8rem;
+    }
+
+    .airAbout_text{
+        padding-left: 0;
+    }
+    .tures_cart-img{
+        width: 23rem;
+        height: 13rem;
+    }
+    .detail_btn{
+        font-size: 14px;
+        padding:5px 8px ;
+    }
+    .detail_img {
+        width: 25rem;
+        height: 17rem;
+    }
+    .detail_sell-name{
+        font-size: 1.5rem;
+    }
+    .detail_sell-price{
+        font-size: 1.7rem;
+    }
+    .date_input{
+        padding: 8px 8px
+    }
+    .date_icons{
+        width: 1rem;
+    }
+    .sellCart-img {
+        width: 16rem;
+        height: 11rem;
+    }
+    .respons_sellCart{
+        font-size: 1.4rem;
+    }
+    .sellCart_info-box{
+        gap: 1.2rem;
+    }
+    .sellCart_info-btn{
+        padding: 3px 12px;
+    }
+    .resigter_form {
+        margin-top: 4rem;
+    }
+    .filter_not-favorite {
+        font-size: 3rem;
+    }
+  }
+
+
+
+@media (min-width:1975px) and (max-width:2100px){
+    .sponsor_img{
+        width: 18rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width:1843px) and (max-width:1975px){
+    .sponsor_img{
+        width: 17rem;
+        height: 10rem;
+    }
+}
+@media (min-width:1705px) and (max-width:1845px){
+    .sponsor_img{
+        width: 16rem;
+        height: 10rem;
+    }
+}
+@media (min-width:1579px) and (max-width:1705px){
+    .sponsor_img{
+        width: 15rem;
+        height: 9rem;
+    }
+}
+@media (min-width:1445px) and (max-width:1579px){
+    .sponsor_img{
+        width: 14rem;
+        height: 9rem;
+    }
+}
+@media (min-width:1315px) and (max-width:1445px){
+    .sponsor_img{
+        width: 13rem;
+        height: 9rem;
+    }
+}
+@media (min-width:1190px) and (max-width:1315px){
+    .sponsor_img{
+        width: 12rem;
+        height: 8rem;
+    }
+}
+@media (min-width:1060px) and (max-width:1190px){
+    .sponsor_img{
+        width: 11rem;
+        height: 8rem;
+    }
+}
+@media (min-width:935px) and (max-width:1060px){
+    .sponsor_img{
+        width: 10rem;
+        height: 6rem;
+    }
+}
+@media (min-width:800px) and (max-width:935px){
+    .sponsor_img{
+        width: 9rem;
+        height: 5rem;
+    }
+}
+@media (min-width:691px) and (max-width:800px){
+    .sponsor_img{
+        width: 8rem;
+        height: 4rem;
+    }
+}
+@media (min-width:560px) and (max-width:691px){
+    .sponsor_img{
+        width: 7rem;
+        height: 4rem;
+    }
+}
+@media (min-width:567px) and (max-width:691px){
+    .sponsor_img{
+        width: 8rem;
+        height: 4rem;
+    }
+    .inner-carousel-map{
+        padding-left: 2rem;
+    }
+}
+@media (min-width:320px) and (max-width:567px){
+    .support{
+        display: none;
+    }
+}

@@ -90,7 +90,7 @@ const ModeNav = ({inpInfo}) => {
             </li>
             {
                 myId == "06e4138f-c6de-4147-a058-6334f7bc614d" ? <li className='nav_li'>
-                <a href="/adminPanel" className="nav_li-link ">
+                <a href="/adminPanel" className="nav_li-link nav_li-link-mode">
                 AdminPanel
                 </a>
             </li> : null
@@ -119,7 +119,7 @@ const ModeNav = ({inpInfo}) => {
               <img onClick={(e)=>(localStorage.setItem("langMode","sv"),window.location.reload(),e.preventDefault())} className='language_flag' src="flag/sweden_flag.png" alt="" />
               <img onClick={(e)=>(localStorage.setItem("langMode","en"),window.location.reload(),e.preventDefault())} className='language_flag' src="flag/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="" />
             </div>
-            <button onClick={()=>lognOutFunc()} className='lognOut-btn'>{myLangData.profile.logOut}</button>
+            {localStorage.getItem('sb-cibpixfpkuzthabstkfx-auth-token')?<button onClick={()=>lognOutFunc()} className='lognOut-btn'>{myLangData.profile.logOut}</button>:null}
             </div>
             
 

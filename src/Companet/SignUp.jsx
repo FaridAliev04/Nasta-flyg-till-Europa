@@ -41,11 +41,11 @@ const SigUp = ({setSignin}) => {
   {
        <form className='resigter_form' onSubmit={handleSubmit} action="">
         <div className="inp_div">
-          <label htmlFor="">{myLangData.register.email}</label>
+          <label className='register_form-label' htmlFor="">{myLangData.register.email}</label>
           <input onChange={(e)=>setEmail(e.target.value)} className='inp_div-inp' type="email" name="email" />
         </div>
         <div className="inp_div">
-          <label htmlFor="">{myLangData.register.password}</label>
+          <label className='register_form-label' htmlFor="">{myLangData.register.password}</label>
           <input onChange={(e)=>setPassword(e.target.value)} className='inp_div-inp' type={passwordType} name="password" />
           <img onClick={()=>passwordEye()} className='password_eye' src="svg EYE MODE/eye-key-look-password-security-see-svgrepo-com.svg" alt="" />
         </div>

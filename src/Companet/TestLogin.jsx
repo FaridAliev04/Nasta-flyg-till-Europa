@@ -74,16 +74,16 @@ async function Signin(){
   { signin===true?
        <form className='resigter_form' onSubmit={handleSubmit} action="">
         <div className="inp_div">
-          <label htmlFor="">{myLangData.register.user}</label>
+          <label className='register_form-label' htmlFor="">{myLangData.register.user}</label>
           <input onChange={(e)=>setUser(e.target.value)} className='inp_div-inp' type="text" name="user" />
         </div>
         <div className="inp_div">
-          <label htmlFor="">{myLangData.register.password}</label>
+          <label className='register_form-label' htmlFor="">{myLangData.register.password}</label>
           <input onChange={(e)=>setPassword(e.target.value)} className='inp_div-inp' type={passwordType} name="password" />
           <img onClick={()=>passwordEye()} className='password_eye' src="svg EYE MODE/eye-key-look-password-security-see-svgrepo-com.svg" alt="" />
         </div>
         <div className="inp_div">
-          <label htmlFor="">{myLangData.register.email}</label>
+          <label className='register_form-label' htmlFor="">{myLangData.register.email}</label>
           <input onChange={(e)=>setEmail(e.target.value)} className='inp_div-inp' type="email" name="email" />
         </div>
         <button onClick={()=>Signin()} className='form_btn form_btn-register'>{myLangData.register.register}</button>

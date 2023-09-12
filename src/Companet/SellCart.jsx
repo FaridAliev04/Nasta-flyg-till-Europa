@@ -97,25 +97,25 @@ const SellCart = () => {
           <img className='sellCart-img' src={e.img} alt="" />
           <div className="sellCart_info">
             <div className="sellCart_info-box">
-              <h1 className='sell_cart-header'>{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>
-              <h1 className='sell_cart-header_ticket'>{e.ticket } <div className="sell_cart-header_icons-div">
+              <h1 className='sell_cart-header respons_sellCart'>{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>
+              <h1 className='sell_cart-header_ticket respons_sellCart'>{e.ticket } <div className="sell_cart-header_icons-div">
                 <IoMdPerson className="sell_cart-header_icons"/>
                 </div></h1>
 
             </div>
             <div className="sellCart_info-box">
-              <p className='sellCart_info-gedisgelis'>{e.gedis}</p>
+              <p className='sellCart_info-gedisgelis respons_sellCart'>{e.gedis}</p>
               <BsArrowLeftRight className='gedisGelis_icons'/>
-              <p className='sellCart_info-gedisgelis'>{e.gelis}</p>
+              <p className='sellCart_info-gedisgelis respons_sellCart'>{e.gelis}</p>
             </div>
 
             <div className="sellCart_info-box">
-              <p className='sell_cart-price'>{e.sellPrice}&euro;</p>
+              <p className='sell_cart-price respons_sellCart'>{e.sellPrice}&euro;</p>
             </div>
             
             <div className="sellCart_info-div_btn">
-              <button onClick={()=>zeroInfo(e)} className='sellCart_info-btn'>{myLangData.sellCart.sellCartBtn}</button>
-              <button onClick={()=>allZeroInfo(e)} className='sellCart_info-btn sellCart_info-delete'>X</button>           
+              <button onClick={()=>zeroInfo(e)} className='sellCart_info-btn respons_sellCart-btn'>{myLangData.sellCart.sellCartBtn}</button>
+              <button onClick={()=>allZeroInfo(e)} className='sellCart_info-btn sellCart_info-delete respons_sellCart-btn'>X</button>           
             </div>
           </div>
         </div>

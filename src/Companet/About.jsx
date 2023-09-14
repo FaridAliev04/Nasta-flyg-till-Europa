@@ -10,6 +10,7 @@ const About = ({inpInfo}) => {
   return (
     <div className='about'>
         <AboutNav inpInfo={inpInfo}/>
+        
         <div className="about-main">
             <Slide  >
                 <h1 className='about-main_header'>

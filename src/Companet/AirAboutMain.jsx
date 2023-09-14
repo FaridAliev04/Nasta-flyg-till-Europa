@@ -7,6 +7,72 @@ const AirAboutMain = () => {
     const [myLangData,setMyLangData]=useState(localStorage.getItem("langMode")=="sv"?langMode.sv:langMode.en)
   return (
     <div className='airaboutmain'>
+        <div className="flag_div-none">
+        <div className="flag-none">
+            <Slide >
+                <h1  className=' about_main-flag_name'>{myLangData.aboutMain.air1}</h1>
+                <div className="airAbout_img-div">
+                    <img className="  air_main-none-img" src="aboutAir/norgeAir.jpg" alt="" />
+                </div>
+                <div className="flag_text">
+                    
+                    <p className='about_main-flag-text'>
+                        {myLangData.aboutMain.airText1}
+                    </p>
+                    <a
+              className="about_main-link-wikipedia"
+              href="https://en.wikipedia.org/wiki/Boeing_737_Next_Generation#737-800"
+              target="_blank"
+            >
+              {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
+            </a>
+                </div>
+            </Slide>
+            </div>
+            <div className="flag-none">
+            <Slide >
+                <h1  className=' about_main-flag_name'>{myLangData.aboutMain.air2}</h1>
+                <div className="airAbout_img-div">
+                    <img className=" air_main-none-img" src="aboutAir/norgeAir2.jpg" alt="" />
+                </div>
+                <div className="flag_text">
+                    
+                    <p className='about_main-flag-text'>
+                        {myLangData.aboutMain.airText2}
+                    </p>
+                    <a
+              className="about_main-link-wikipedia"
+              href="https://en.wikipedia.org/wiki/Boeing_787_Dreamliner"
+              target="_blank"
+            >
+              {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
+            </a>
+                </div>
+            </Slide>
+            </div>
+            
+            <div className="flag-none">
+            <Slide >
+                <h1  className=' about_main-flag_name'>{myLangData.aboutMain.air3}</h1>
+                <div className="airAbout_img-div">
+                    <img className=" air_main-none-img" src="aboutAir/sverigeAir.jpg" alt="" />
+                </div>
+                <div className="flag_text">
+                    
+                    <p className='about_main-flag-text'>
+                        {myLangData.aboutMain.airText3}
+                    </p>
+                    <a
+              className="about_main-link-wikipedia"
+              href="https://en.wikipedia.org/wiki/Airbus_A320_family"
+              target="_blank"
+            >
+              {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
+            </a>
+                </div>
+            </Slide>
+            </div>
+        </div>
        <div className="air_main">     
             <Slide className='slide_airAbout-text'>
                 <div className="airAbout_text">

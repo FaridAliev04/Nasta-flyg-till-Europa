@@ -7,11 +7,12 @@ import {CgProfile} from "react-icons/cg"
 import {ReactComponent as Img} from "../modeSvg/night-night-mode-moon-svgrepo-com.svg"
 import {ReactComponent as Img2} from "../modeSvg/light-light-mode-sun-svgrepo-com.svg"
 import langMode from '../LangMode';
-
+import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai"
 
 const ModeNav = ({inpInfo}) => {
     const [mode,setMode]=useState(localStorage.getItem("mode"))
     const [profil,setProfil]=useState(false)
+    const [navList,setNavList]=useState(true)
     useEffect(() => {
       if(localStorage.getItem("mode")===undefined){
         setMode("light")
@@ -48,6 +49,53 @@ const ModeNav = ({inpInfo}) => {
     }
 
   return <nav>
+    <div className="nav_list-none_div">
+        <AiOutlineMenu onClick={()=>setNavList(false)} className='nav_list-none_icons'/>
+        <div className={navList===true?'nav_list-none':"nav_list-none-block"}>
+            <AiOutlineClose onClick={()=>setNavList(true)} className='close_incos'/>
+        <ul className='nav_ul-none'>
+            <li className='nav_li'>
+                <NavLink to="/" className="nav_li-link ">
+                    {myLangData.nav.hem}
+                </NavLink>
+            </li>
+            <li className='nav_li'>
+                <NavLink to="/HandlaOm" className="nav_li-link ">
+                {myLangData.nav.handlaOm} 
+                </NavLink>
+            </li>
+            <li className='nav_li'>
+                <a href="/Tures" className="nav_li-link ">
+                {myLangData.nav.tures}
+                </a>
+                
+            </li>
+            <li className='nav_li'>
+                <NavLink to="/SellCart" className="nav_li-link ">
+                {myLangData.nav.vagn}
+                </NavLink>
+            </li>
+            <li className='nav_li'>
+                <NavLink to="/favorite" className="nav_li-link ">
+                {myLangData.nav.favorite}  
+                </NavLink>
+            </li>
+            <li className='nav_li'>
+                <NavLink to="/login" className="nav_li-link ">
+                {myLangData.nav.login}
+                </NavLink>
+            </li>
+            {
+                myId == "06e4138f-c6de-4147-a058-6334f7bc614d" ? <li className='nav_li'>
+                <a href="/adminPanel" className="nav_li-link ">
+                AdminPanel
+                </a>
+            </li> : null
+            }
+            
+        </ul>
+        </div>
+    </div>
     <div className="nav_logo">
         <h1 className='nav_logo-header'>
             <NavLink to="/" className="nav_logo-header_link nav_li-link-mode">

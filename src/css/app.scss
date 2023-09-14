@@ -21,7 +21,32 @@ ul{
 a{
     text-decoration: none;
 }
+.nav_list-none_div{
+    display: none;
+}
+.nav_list-none{
+    display: none;
+}
+.nav_list-none-block{
+    display: block;
+}
+.nav_ul-none{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+}
+.close_incos{
+    float: right;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    margin-top: 0.5rem;
+}
 .nav_list{
+    margin-top: 0.7rem;
+}
+.footer-nav_list{
     margin-top: 0.7rem;
 }
 nav{
@@ -182,6 +207,9 @@ nav{
 .support_header{
     text-align: center;
     color: #e91e63;
+}
+.information_none{
+    display: none;
 }
 
 footer{
@@ -483,6 +511,9 @@ footer{
     padding: 5px 8px;
     border-radius: 9px;
     cursor: pointer;
+}
+.flag_div-none{
+    display: none;
 }
 .person_number{
     font-size: 1.5rem;
@@ -1093,6 +1124,24 @@ article {
 .form_btn-register{
     background-color: black;
 }
+.nav_list-none_icons{
+    cursor: pointer;
+}
+// .nav_list-none_div{
+//     display: block;
+// }
+.nav_list-none_icons{
+    width: 2rem;
+    height: 2rem;
+}
+.nav_list-none-block{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    font-size: 1.2rem;
+    z-index: 9999;
+    left: 0;
+}
 
 
   @media (min-width:1800px) and (max-width:2100px) {
@@ -1529,6 +1578,8 @@ margin-top: 0.6rem;}
 
     .airAbout_text{
         padding-left: 0;
+        float: inherit;
+        padding: 2rem;
     }
     .tures_cart-img{
         width: 23rem;
@@ -1574,8 +1625,342 @@ margin-top: 0.6rem;}
         font-size: 3rem;
     }
   }
+  @media  (min-width:769px) and (max-width:900px){
+    .nav_list-none_div{
+        display: block;
+    }
+    .detail_img-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .detail_img {
+        width: 40rem;
+        height: 30rem;
+    }
+    .detail_map{
+        display: block;
+    }
+    .detail_sell-name{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .detail_sell-price{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .detail_form{
+        justify-content:center;
+        gap: 4rem;
+    }
+    .date_label{
+        font-size: 1.2rem;
+    }
+    .person_number-div{
+        justify-content: center;
+    }
+    .detail_sell{
+        justify-content: center;
+    }
+    .nav_list{
+        display: none;
+    }
+    .resigter_form{
+        height: 18rem;
+        padding:1rem 1rem;
+        width: 14rem;
+    }
+    .filter_not-favorite {
+        font-size: 2.5rem;
+    }
+    .sellCart_info-btn {
+        padding: 4px 9px;
+        font-size: 0.7rem;
+    }
 
+    .respons_sellCart{
+        font-size: 1rem;
+    }
+    .sellCart-img {
+        width: 14rem;
+        height: 9rem;
+    }
+    .tures_bg{
+        height: 25rem;
+        background-position: inherit;
+    }
+    .tures_cart-img {
+        width: 20rem;
+        height: 12rem;
+    }
+    .main{
+        margin-top: 4rem;
+    }
+    .index-module_type__E-SaG{
+        font-size: 2.3rem;
+    }
+    .main_btn-div {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+    .main_btn{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .information{
+        margin-top: 8rem;
+    }
+    .info-vare {
+        font-size: 1.1rem;
+    }
+    .info{
+        justify-content: center;
+        gap: 2rem;
+    }
+    .data-img {
+        width: 21rem;
+    }
+    .info_category{
+        font-size: 1.5rem;
+    }
+    .info_texts{
+        width: 23rem;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .info_text { 
+        padding-right: 0; 
+        padding-top: 0; 
+        padding-bottom: 0; 
+    }
+    .about-main_header {
+        font-size: 1.5rem;
+    }
+    .about{
+        background-position: inherit;
+    }
+    .about_main-flag_img {
+        width: 22rem;
+        height: 32rem;
+    }
+    .flag_text {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .about_main-flag-text{
+        width: 22rem;    
+        letter-spacing: 0;
+    }
+    .airAbout_img {
+        width: 23rem;
+        height: 18rem;
+    }
+    .airAbout_text {
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        float: inherit;
+        gap: 0.5rem;
+    }
+    .airAbout_name{
+        font-size: 1.7rem;
+    }
+    .about_main-flag_name{
+        font-size: 1.7rem;
+    }
+    .airAbout_texts {
+        width: 22rem;
+        letter-spacing: 0; 
+    }
+    .resigter_form{
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+  }
 
+  @media  (min-width:481px) and (max-width:769px){
+    .nav_list{
+        display: none;
+    }
+    .nav_list-none_div{
+        display: block;
+    }
+    .detail_img-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .detail_img {
+        width: 40rem;
+        height: 30rem;
+    }
+    .detail_map{
+        display: block;
+    }
+    .detail_sell-name{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .detail_sell-price{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .detail_form{
+        justify-content:center;
+        gap: 4rem;
+    }
+    .date_label{
+        font-size: 1.2rem;
+    }
+    .tures_bg{
+        background-position: inherit;
+        height: 15rem;
+    }
+    .tures_cart-texts {
+padding: 9px 15px;
+  }
+  .tures_cart-img{
+    width: 22rem;
+  }
+  .tures_info-map{
+    display: flex;
+    justify-content: center;
+  }
+  .tures_bg-inp {
+    width: 20rem;
+  }
+  .footer_ul {
+    gap: 2rem;
+  }
+  .filter_not-favorite {
+    font-size: 1.7rem;
+  }
+  .footer_logo-header{
+    font-size: 1.7rem;
+  }
+  .main{
+    margin-top: 2rem;
+  }
+  .index-module_type__E-SaG{
+    font-size: 1.4rem;
+    color: black;
+  }
+  .nav_logo-header_link{
+    font-size: 1.7rem;
+  }
+  .main_btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main_btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+  }
+  .profil_email{
+    font-size: 1rem;
+    padding: 9px 8px;
+  }
+  .profil_lognOut-block{
+        min-width: 4.7rem;
+  }
+  .main_btn-div{
+    margin-top: 2rem;
+  }
+  .information {
+    margin-top: 5rem;
+  }
+  .information_none{
+    display: block;
+    padding: 4rem;
+  }
+  .information_box{
+    display: none;
+  }
+  .info_none-slider{
+    display: flex;
+    justify-content: center;
+  }
+  .info{
+    flex-direction: column;
+  }
+  .data-img {
+    width: 28rem;
+}
+.nav_profil {
+    margin-top: 0;
+}
+.info_texts{
+    width: 28rem;
+}
+.about{
+    background-position: inherit;
+}
+.about-main {
+    margin-top: 2rem;
+    gap: 2.5rem;
+    height: 14rem;
+}
+.about-main_header{
+    font-size: 1rem;
+}
+.flag_div-none{
+    display: block;
+    background-color: #1e6091;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.flag{
+    display: none;
+}
+
+.about_main-flag_div{
+    display: flex;
+    justify-content: center;
+    float: inherit;
+    margin-top: 1rem;
+}
+.about_main-flag_name{
+    text-align: center;
+}
+.about_main-flag_img {
+    width: 20rem;
+    height: 25rem;
+}
+.flag_text{
+    padding: 2rem;
+}
+.about_main-flag-text{
+    width: 100%;
+    text-align: center;
+    min-width: 25rem;
+}
+.about_main-link-wikipedia{
+    min-width: 12%;
+    margin: 0 auto;
+}
+.air_main{
+    display: none;
+}
+.air_main-none-img{
+    width: 30rem;
+    height: 20rem;
+}
+.airAbout_img-div {
+    display: flex;
+    justify-content: center;
+}
+.airAbout_img-div{
+    margin-top: 1rem;
+}
+  }
 
 @media (min-width:1975px) and (max-width:2100px){
     .sponsor_img{

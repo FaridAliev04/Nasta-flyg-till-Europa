@@ -9,13 +9,13 @@ const Footer = () => {
     <footer>
         <div className="foooter_top">
             <div className="logo">
-                <h1 className='nav_logo-header'>
+                <h1 className='nav_logo-header footer_logo-header'>
                     <NavLink className="nav_logo-header_link footer_li-link">
                         NFE
                     </NavLink>
                 </h1>
             </div>
-            <div className="nav_list">
+            <div className="footer-nav_list">
                 <ul className='nav_ul footer_ul'>
                     <li className='nav_li'>
                         <NavLink to="/" className="nav_li-link footer_li-link">

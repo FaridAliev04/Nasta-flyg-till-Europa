@@ -19,14 +19,15 @@ const AirAboutMain = () => {
                     <p className='about_main-flag-text'>
                         {myLangData.aboutMain.airText1}
                     </p>
-                    <a
+                    
+                </div>
+                <a
               className="about_main-link-wikipedia"
               href="https://en.wikipedia.org/wiki/Boeing_737_Next_Generation#737-800"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-                </div>
             </Slide>
             </div>
             <div className="flag-none">
@@ -40,14 +41,15 @@ const AirAboutMain = () => {
                     <p className='about_main-flag-text'>
                         {myLangData.aboutMain.airText2}
                     </p>
-                    <a
+                    
+                </div>
+                <a
               className="about_main-link-wikipedia"
               href="https://en.wikipedia.org/wiki/Boeing_787_Dreamliner"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-                </div>
             </Slide>
             </div>
             
@@ -62,14 +64,15 @@ const AirAboutMain = () => {
                     <p className='about_main-flag-text'>
                         {myLangData.aboutMain.airText3}
                     </p>
-                    <a
+                   
+                </div>
+                 <a
               className="about_main-link-wikipedia"
               href="https://en.wikipedia.org/wiki/Airbus_A320_family"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-                </div>
             </Slide>
             </div>
         </div>

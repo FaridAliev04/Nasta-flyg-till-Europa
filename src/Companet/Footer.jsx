@@ -9,8 +9,8 @@ const Footer = () => {
     <footer>
         <div className="foooter_top">
             <div className="logo">
-                <h1 className='nav_logo-header footer_logo-header'>
-                    <NavLink className="nav_logo-header_link footer_li-link">
+                <h1 className='nav_logo-header '>
+                    <NavLink className="nav_logo-header_link footer_li-link footer_logo-header">
                         NFE
                     </NavLink>
                 </h1>

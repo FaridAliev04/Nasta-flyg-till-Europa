@@ -92,9 +92,11 @@ const SellCart = () => {
          </div>
      
       {filter.length===0?<h1 className='filter_not-favorite'>{myLangData.sellCart.sellCartMesaj}</h1>:filter.map((e)=>{ 
-        return<Slide>
+        return<Slide className='sellCart_slide'>
         <div className='sellCart'>
+          <div className="sellCart_img-div">
           <img className='sellCart-img' src={e.img} alt="" />
+          </div>
           <div className="sellCart_info">
             <div className="sellCart_info-box">
               <h1 className='sell_cart-header respons_sellCart'>{localStorage.getItem("langMode")=="sv"?e.cityName:e.cityNameEng}</h1>

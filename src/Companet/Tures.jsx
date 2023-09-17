@@ -118,16 +118,16 @@ setInfo(priceSortAZ)
           <h1 onClick={()=>onClickBlock()} className="filter_header">{myLangData.filter.filterBtn} <div className="filter_icons-div"><BsFilterLeft className="filter_icons"/></div></h1>
           <div className={block===false?"filter_position":"filter_position-block"}>
             <div className="filter_box">
-              <input onClick={()=>sorrtAZ()} name="sortSell" type="radio" id="sortAz" />
-              <label htmlFor="sortAz">Z-A </label>
+              <input className="sort_inp" onClick={()=>sorrtAZ()} name="sortSell" type="radio" id="sortAz" />
+              <label className="filter_box-label" htmlFor="sortAz">Z-A </label>
             </div>
             <div className="filter_box">
-              <input onClick={()=>sorrtSell()} name="sortSell" type="radio" id="sortSell" />
-              <label htmlFor="sortSell">{myLangData.filter.azCox}</label>
+              <input  className="sort_inp"  onClick={()=>sorrtSell()} name="sortSell" type="radio" id="sortSell" />
+              <label className="filter_box-label" htmlFor="sortSell">{myLangData.filter.azCox}</label>
             </div>
             <div className="filter_box">
-              <input onClick={()=>sortSellYuksek()} name="sortSell" type="radio" id="sortSellYuksek" />
-              <label htmlFor="sortSellYuksek">{myLangData.filter.coxAz}</label>
+              <input  className="sort_inp"  onClick={()=>sortSellYuksek()} name="sortSell" type="radio" id="sortSellYuksek" />
+              <label className="filter_box-label" htmlFor="sortSellYuksek">{myLangData.filter.coxAz}</label>
             </div>
           </div>
         </div>

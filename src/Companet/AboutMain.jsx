@@ -26,14 +26,15 @@ const AboutMain = () => {
              {myLangData.aboutMain.countryText1}
             </p>
 
-            <a
+            
+          </div>
+          <a
               className="about_main-link-wikipedia"
               href="https://sv.wikipedia.org/wiki/Austria"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-          </div>
         </Slide>
         </div>
         <div className="flag-none">
@@ -52,6 +53,7 @@ const AboutMain = () => {
             <p className="about_main-flag-text">
               {myLangData.aboutMain.countryText2}
             </p>
+            </div>
             <a
               className="about_main-link-wikipedia"
               href="https://sv.wikipedia.org/wiki/Denmark"
@@ -59,7 +61,6 @@ const AboutMain = () => {
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-          </div>
         </Slide>
       </div>
       <div className="flag-none">
@@ -78,14 +79,15 @@ const AboutMain = () => {
             <p className="about_main-flag-text">
             {myLangData.aboutMain.countryText3}
             </p>
-            <a
+            
+          </div>
+          <a
               className="about_main-link-wikipedia"
               href="https://sv.wikipedia.org/wiki/Germany"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-          </div>
         </Slide>
       </div>
       <div className="flag-none">
@@ -104,14 +106,15 @@ const AboutMain = () => {
             <p className="about_main-flag-text">
               {myLangData.aboutMain.countryText4}
             </p>
-            <a
+            
+          </div>
+          <a
               className="about_main-link-wikipedia"
               href="https://sv.wikipedia.org/wiki/Sverige"
               target="_blank"
             >
               {myLangData.aboutMain.aboutBtn} <AiOutlineArrowRight className="about_link-icons" />
             </a>
-          </div>
         </Slide>
       </div>
       </div>

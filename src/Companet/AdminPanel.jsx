@@ -31,7 +31,7 @@ const AdminPanel = () => {
           const { data, error } = await supabase
             .from("information")
             .select("*")
-            .limit(30);
+            .limit(1000);
           if (error) throw error;
           const strAscending = [...data].sort((a, b) =>
       a.id > b.id ? 1 : -1,)

@@ -1,0 +1,2724 @@
+$nav-fonts:1.3rem;
+$margin-top:5rem;
+$margin-top-page:10rem;
+input {
+    outline: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    // font-family: 'Open Sans';
+    font-family: 'Fira Sans';
+    box-sizing: border-box;
+    // cursor: alias;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_list-none_div {
+    display: none;
+}
+
+.nav_list-none {
+    display: none;
+}
+
+.nav_list-none-block {
+    display: block;
+}
+
+.nav_ul-none {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.close_incos {
+    float: right;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+.nav_list {
+    margin-top: 0.7rem;
+}
+
+.footer-nav_list {
+    margin-top: 0.7rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.nav_li-link {
+    font-size: ($nav-fonts);
+    font-weight: 500;
+    color: #11181d;
+    opacity: 0.7;
+}
+
+.nav_li-link:hover {
+    opacity: 1;
+}
+
+.nav_logo-header_link {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #11181d;
+}
+
+.nav_main-video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $margin-top-page;
+}
+
+.main_btn-div {
+    width: 16%;
+    margin: 0 auto;
+    margin-top: $margin-top;
+}
+
+.main_btn {
+    border: none;
+    background-color: #264653;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.main_btn:hover {
+    opacity: 1;
+}
+
+.information_box {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.information {
+    margin-top: 20rem;
+    background-color: #1a759f;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.svg {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.info-vare {
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+}
+
+.info-img {
+    display: flex;
+}
+
+.data-img {
+    width: 40rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    z-index: 99999;
+    background-color: #1a759f;
+}
+
+.info_category {
+    width: auto;
+}
+
+.info_texts {
+    width: 30rem;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    letter-spacing: 3px;
+}
+
+.info_category-number {
+    color: #023047;
+}
+
+.info_category {
+    color: #240046;
+    display: flex;
+    // flex-direction: column;
+    gap: 1rem;
+}
+
+.info_text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.info-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.inner-carousel {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.carousel {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.info_category-number {
+    color: #240046;
+}
+
+.inner-carousel-map {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.sponsor_img {
+    width: 13rem;
+    height: 7rem;
+}
+
+.support {
+    margin-top: 8rem;
+}
+
+.support_header {
+    text-align: center;
+    color: #e91e63;
+}
+
+.information_none {
+    display: none;
+}
+
+footer {
+    background-color: #33519c;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.footer_li-link {
+    color: white;
+}
+
+.foooter_top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_ul {
+    gap: 3rem;
+}
+
+.footer_bottom {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.footer_hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.index-module_type__E-SaG {
+    font-size: 2.7rem;
+    font-family: 'Fira Sans';
+    color: #023047;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+
+.main_type {
+    text-align: center;
+}
+
+.about {
+    background-image: url(../../public/cityPhoto/about-bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.aboutNav_li-link {
+    color: white;
+}
+
+.about-main {
+    height: 35rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.about-main_header {
+    color: #f6fff8;
+    width: auto;
+    font-size: 2rem;
+}
+
+.about_main-flag_img {
+    width: 30rem;
+    height: 40rem;
+}
+
+.flag {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slide_flag-img {
+    width: 50%;
+    background-color: #a8dadc;
+}
+
+.slide_flag-text {
+    width: 50%;
+    background-color: #457b9d;
+}
+
+.flag_text {
+    padding-left: 4rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about_main-flag_div {
+    float: right;
+}
+
+.about_main-link-wikipedia {
+    width: 5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.about_main-flag_name {
+    color: #e91e63;
+}
+
+.about_main-flag-text {
+    width: 23rem;
+    letter-spacing: 2px;
+}
+
+.about_link-icons {
+    position: absolute;
+    bottom: 0.05rem;
+    right: -1.5rem;
+}
+
+.about_main-link-wikipedia {
+    position: relative;
+}
+
+.airAbout_img {
+    width: 35rem;
+    height: 25rem;
+}
+
+.air_main {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.airAbout_text {
+    padding-right: 4rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    float: right;
+}
+
+.airAbout_name {
+    color: #e91e63;
+}
+
+.airAbout_texts {
+    width: 26rem;
+    letter-spacing: 2px;
+}
+
+.slide_airAbout-text {
+    width: 50%;
+    background-color: #1a759f;
+}
+
+.slide_airAbout-img {
+    width: 50%;
+    background-color: #1e6091;
+}
+
+.about_main-flag_div {
+    display: flex;
+}
+
+.airAbout_img-div {
+    display: flex;
+}
+
+.faq {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.coTures {
+    background-color: #33519c;
+}
+
+.tures {
+    margin-top: 2rem;
+}
+
+.tures_cart {
+    border-radius: 12px;
+    background-color: #bde0fe;
+}
+
+.tures_cart-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 25rem;
+    height: 15rem;
+}
+
+.tures_cart-name {
+    font-size: 1.3rem;
+}
+
+.tures_cart-img_position {
+    position: relative;
+}
+
+.tures_info-map {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tures_cart-img {
+    position: relative;
+}
+
+.tures_cart-country_flag {
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    height: 2rem;
+    border-top-left-radius: 12px;
+    // border-top-right-radius:12px ;
+}
+
+.detail_img {
+    width: 40rem;
+    height: 30rem;
+}
+
+.detail_map {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.detail_sell {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.tures_cart-icon-none {
+    display: none;
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+.tures_cart-icon {
+    cursor: pointer;
+    right: 2rem;
+    width: 2.5rem;
+    top: 0;
+    height: 2.5rem;
+    color: red;
+}
+
+.tures_cart-heart-btn {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.tures_cart-allBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tures_cart-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #023047;
+}
+
+.tures_cart-price {
+    font-size: 1.9rem;
+    color: #e91e63;
+    display: flex;
+    justify-content: end;
+}
+
+.tures_cart-btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    font-size: 1rem;
+    background-color: #1a759f;
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+
+.tures_cart-texts {
+    padding: 15px 20px;
+}
+
+.detail_sell-name {
+    font-size: 2;
+    font-weight: 500;
+    color: #240046;
+}
+
+.detail_sell-price {
+    font-size: 2.5rem;
+    color: #e91e63;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail_form {
+    display: flex;
+    gap: 1rem;
+}
+
+.date_icons {
+    margin-top: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.date_label {
+    font-size: 1.2rem;
+}
+
+.date_input {
+    font-size: 1rem;
+    padding: 8px 25px;
+    outline: none;
+}
+
+.person_number-icons {
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}
+
+.person_number-btn {
+    border: none;
+    background-color: #1a759f;
+    padding: 5px 8px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.flag_div-none {
+    display: none;
+}
+
+.person_number {
+    font-size: 1.5rem;
+}
+
+.person_number-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail_btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border-radius: 9px;
+    background-color: #1a759f;
+    padding: 8px 20px;
+}
+
+.tures_info-map {
+    margin-top: 5rem;
+}
+
+.filter_not-favorite {
+    font-size: 3.5rem;
+    width: 100%;
+    color: #e91e63;
+    letter-spacing: 2px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+}
+
+.tures_bg {
+    background-image: url(../../public/background/sea-4955005_1920.jpg);
+    background-size: 100%;
+    height: 35rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tures_bg-inp_div {
+    position: relative;
+}
+
+.tures_bg-inp_label {
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0.7rem;
+}
+
+.tures_bg-inp_label-search {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tures_bg-inp {
+    outline: none;
+    width: 28rem;
+    height: 3rem;
+    padding: 3px 24px;
+    border: none;
+    border-radius: 12px;
+}
+
+.filter_div {
+    position: relative;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+}
+
+.filter_icons-div {
+    margin-top: 0.3rem;
+}
+
+.filter_icons {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.filter_header {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.filter_div {
+    background-color: white;
+    padding: 7px 14px;
+    border-radius: 9px;
+    width: 10rem;
+}
+
+.sellCart_div {
+    margin-top: 5rem;
+}
+
+.filter_box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter_position {
+    display: none;
+    position: absolute;
+}
+
+.filter_position-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    width: 10rem;
+    background-color: white;
+    padding: 7px 14px;
+    left: 0;
+}
+
+.sellCart-img {
+    width: 22rem;
+    height: 15rem;
+    border-radius: 9px;
+}
+
+.tures_info-plus {
+    color: white;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+.tures_info-plus_div {
+    display: flex;
+    justify-content: center;
+}
+
+.sellCart_div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sell_cart-header_ticket {
+    display: flex;
+}
+
+.sellCart {
+    display: flex;
+    background-color: #1a759f;
+}
+
+.sellCart_info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    margin-left: 2rem;
+}
+
+.sellCart_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sellCart_info-div_btn {
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-icons {
+    color: white;
+}
+
+.sell_cart-header {
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.sell_cart-header_ticket {
+    display: flex;
+    gap: 0.3rem;
+    color: white;
+    font-size: 1.9rem;
+    margin-top: 0.1rem;
+}
+
+.sell_cart-header_icons-div {
+    margin-top: 0.1rem;
+}
+
+.sellCart_info-gedisgelis {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.gedisGelis_icons {
+    font-size: 1.6rem;
+}
+
+.sell_cart-price {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.sellCart_info-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    background-color: #023047;
+    padding: 7px 14px;
+    color: white;
+    font-size: 1rem;
+}
+
+.login_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.login_div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.login_box-inp {
+    width: 17rem;
+    font-size: 1rem;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 9px;
+}
+
+.login_label {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.filter_not-favorite-registrera {
+    margin-top: 5rem;
+}
+
+.login_btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    font-size: 1rem;
+    background-color: #e91e63;
+    color: white;
+    padding: 4px 10px;
+    width: 17rem;
+}
+
+.login_error-none {
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.mesaj-None {
+    display: none;
+}
+
+.mesaj-block {
+    visibility: visible;
+    color: red;
+}
+
+.mesaj_none {
+    display: none;
+}
+
+.mesaj_block {
+    display: block;
+}
+
+.mode_svg {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.nav_profil {
+    margin-top: 0.2rem;
+}
+
+.mode_svg-none {
+    display: none;
+}
+
+.light {
+    transition: 1s;
+}
+
+.dark {
+    background-color: rgb(70, 70, 70);
+    transition: 1s;
+    .info {
+        background-color: rgb(70, 70, 70);
+        transition: 1s;
+    }
+    .information {
+        transition: 1s;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+    .reviews_header {
+        color: white;
+    }
+    .info_category {
+        transition: 1s;
+        color: #e91e63;
+        span {
+            transition: 1s;
+            color: #e91e63;
+        }
+    }
+    footer {
+        transition: 1s;
+        background-color: black;
+        span {
+            transition: 1s;
+            color: white;
+        }
+    }
+    .slide_flag-img {
+        transition: 1s;
+        background-color: #343a40;
+    }
+    .slide_flag-text {
+        transition: 1s;
+        background-color: #212529;
+    }
+    .flag_text {
+        transition: 1s;
+        color: white;
+    }
+    .slide_airAbout-text {
+        transition: 1s;
+        background-color: #11181d;
+        color: white;
+    }
+    .slide_airAbout-img {
+        background-color: #22303a;
+    }
+    .coTures {
+        transition: 1s;
+        background-color: #343a40;
+    }
+    .detail_sell-name {
+        color: white;
+    }
+    .date_label {
+        color: white;
+    }
+    .date_icons {
+        color: white;
+    }
+    .person_number {
+        color: white;
+    }
+    .nav_li-link-mode {
+        color: white;
+    }
+    .fag_header {
+        color: white;
+    }
+    .flag_div-none {
+        background-color: rgb(70, 70, 70);
+        transition: 1s;
+    }
+}
+
+#language {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.language_flag {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+
+.language_div {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.sellCart_info-delete {
+    color: red;
+}
+
+.thankyou {
+    display: none;
+}
+
+.thankyou_block {
+    display: block;
+    transition: 1s;
+}
+
+.thankyou_jsx-div {
+    display: flex;
+    gap: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #023047;
+    width: auto;
+    padding: 7px 15px;
+    transition: 1s;
+}
+
+.thankYou_header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: green;
+}
+
+.thankYou_icons {
+    width: 1.7rem;
+    height: 1.7rem;
+    color: green;
+}
+
+.adminpanel_infoAdd {
+    display: flex;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.adminpanel_inp-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adminpanel_label {
+    color: #e91e63;
+}
+
+.adminPanel_btn {
+    cursor: pointer;
+    padding: 2px 22px;
+    color: #e91e63;
+    background: white;
+    border: 1px solid;
+}
+
+.adminpanel_inp {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.info_crud-btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+}
+
+.info_crud-delete {
+    background-color: red;
+    color: white;
+}
+
+.info_crud-update {
+    background-color: #dda15e;
+    color: black;
+}
+
+.update_info-div {
+    width: 400px;
+    height: 363px;
+    border-radius: 12px;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 15px 15px;
+}
+
+.info_crud-none {
+    color: red;
+}
+
+.uptate-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adminPanel_div {
+    margin-top: 4rem;
+}
+
+.adminpanel_infoAdd {
+    width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article.lastSlide {
+    transform: translateX(-100%);
+}
+
+article.nextSlide {
+    transform: translateX(100%);
+}
+
+.person-img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: 4px solid var(--clr-grey-8);
+    box-shadow: var(--dark-shadow);
+}
+
+.section {
+    margin-top: 4rem;
+}
+
+.section-center {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 80vw;
+    /* have to have a height */
+    height: 450px;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background: var(--clr-grey-5);
+    color: var(--clr-white);
+    width: 1.25rem;
+    height: 1.25rem;
+    display: grid;
+    place-items: center;
+    border-color: transparent;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.title {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.prev {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}
+
+.reviews-icons {
+    width: 3rem;
+    height: 3rem;
+    color: black;
+}
+
+.reviews_country {
+    font-size: 1.3rem;
+    color: #e91e63;
+}
+
+.reviews_btn {
+    margin-top: 1rem;
+}
+
+.profil_lognOut {
+    position: absolute;
+    right: 0;
+}
+
+.profil {
+    position: relative;
+}
+
+.profil_lognOut {
+    position: absolute;
+    display: none;
+}
+
+.profil_lognOut-block {
+    position: absolute;
+    display: block;
+    right: 0;
+    padding: 13px 20px;
+    background-color: #1e6091;
+    z-index: 9999;
+    width: auto;
+    min-width: 6.7rem;
+}
+
+.profil_email {
+    font-size: 1rem;
+    padding: 9px 20px;
+    border: none;
+    background-color: #1e6091;
+    color: white;
+}
+
+.user_hr {
+    margin-top: 0.5rem;
+}
+
+.profil_img {
+    margin-top: 0.5rem;
+}
+
+.lognOut-btn {
+    margin-top: 0.5rem;
+    padding: 3px 6px;
+    border: none;
+    background: cornflowerblue;
+    color: white;
+}
+
+.user_email {
+    color: white;
+}
+
+.resigter_form {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    width: 22rem;
+    margin-left: 7rem;
+    padding: 2rem 2rem;
+    height: 19rem;
+}
+
+.inp_div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.password_eye {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 6px;
+    top: 1.4rem;
+}
+
+.inp_div-inp {
+    padding: 5px 10px;
+    border-radius: 9px;
+    border: 0.4px solid black;
+}
+
+.form_btn {
+    font-size: 1rem;
+    padding: 3px;
+    border: none;
+    background: cornflowerblue;
+    border-radius: 18px;
+    color: white;
+}
+
+.form_btn-register {
+    background-color: black;
+}
+
+.nav_list-none_icons {
+    cursor: pointer;
+}
+
+// .nav_list-none_div{
+//     display: block;
+// }
+.nav_list-none_icons {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav_list-none-block {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    font-size: 1.2rem;
+    z-index: 9999;
+    left: 0;
+}
+
+@media (min-width:1800px) and (max-width:2100px) {
+    .nav_li-link {
+        font-size: 1.7rem;
+    }
+    .nav_list {
+        margin-top: 1.4rem;
+    }
+    .nav_logo-header_link {
+        font-size: 3rem;
+    }
+    .language_flag {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .mode_svg {
+        width: 3rem;
+        height: 3rem;
+    }
+    .information_box {
+        width: 80%;
+    }
+    .data-img {
+        width: 50rem;
+    }
+    .info_texts {
+        width: 32rem;
+        font-size: 1.4rem;
+    }
+    .info_category {
+        font-size: 2.7rem;
+    }
+    .info-vare {
+        font-size: 1.5rem;
+    }
+    // .sponsor_img {
+    //     width: 17rem;
+    //     height: 9rem;
+    // }
+    .support_header {
+        font-size: 3rem;
+    }
+    .footer_bottom-span {
+        font-size: 1.2rem;
+    }
+    .main_btn-div {
+        width: 13%;
+    }
+    .about-main_header {
+        font-size: 3rem;
+    }
+    .about_main-flag_img {
+        width: 35rem;
+        height: 45rem;
+    }
+    .about_main-flag_name {
+        font-size: 3rem;
+    }
+    .about_main-flag-text {
+        width: 33rem;
+        font-size: 1.4rem;
+    }
+    .airAbout_img {
+        width: 39rem;
+        height: 29rem;
+    }
+    .airAbout_name {
+        font-size: 3rem;
+    }
+    .airAbout_texts {
+        width: 38rem;
+        font-size: 1.4rem;
+    }
+    .about_main-link-wikipedia {
+        width: 7rem;
+        font-size: 1.3rem;
+    }
+    .fag_header {
+        font-size: 2.5rem;
+    }
+    .MuiTypography-root {
+        font-size: 1.5rem !important;
+    }
+    .tures_cart-name {
+        font-size: 1.5rem;
+    }
+    .tures_cart-btn {
+        font-size: 1.3rem;
+    }
+    .tures_cart-price {
+        font-size: 2.3rem;
+    }
+    .tures_cart-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .tures_bg-inp {
+        width: 29rem;
+        height: 3.3rem;
+    }
+    .filter_header {
+        font-size: 1.7rem;
+    }
+    .sellCart_info {
+        gap: 3rem;
+    }
+    .sellCart_info-btn {
+        padding: 12px 17px;
+        font-size: 1.5rem;
+    }
+    .sell_cart-price {
+        font-size: 2.9rem;
+    }
+    .sellCart_info-gedisgelis {
+        font-size: 2.9rem;
+    }
+    .sell_cart-header_ticket {
+        font-size: 2.9rem;
+    }
+    .sell_cart-header {
+        font-size: 2.9rem;
+    }
+    .sellCart-img {
+        width: 25rem;
+        height: 17rem;
+    }
+    .detail_img {
+        width: 47rem;
+        height: 37rem;
+    }
+    .detail_sell-name {
+        font-size: 3rem;
+    }
+    .detail_sell-price {
+        font-size: 3.5rem;
+    }
+    .date_label {
+        font-size: 2rem;
+    }
+    .date_input {
+        padding: 12px 29px;
+    }
+    .person_number-icons {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .person_number {
+        font-size: 2rem;
+    }
+    .detail_btn {
+        font-size: 25px;
+    }
+    .reviews_header {
+        font-size: 2.5rem;
+    }
+    .detail_map {
+        width: 80%;
+    }
+    .resigter_form {
+        margin-top: 10rem;
+        width: 23rem;
+        margin-left: 8rem;
+        height: 21rem;
+    }
+    .register_form-label {
+        font-size: 1.2rem;
+    }
+    .form_btn {
+        font-size: 1.4rem;
+    }
+    .password_eye {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 1.6rem;
+    }
+    .nav_profil {
+        margin-top: 1.2rem;
+    }
+    .profil_email {
+        font-size: 1.3rem;
+    }
+    .profil_lognOut-block {
+        min-width: 7.8516rem;
+    }
+}
+
+@media (min-width:1500px) and (max-width:1800px) {
+    .nav_li-link {
+        font-size: 1.5rem;
+    }
+    .data-img {
+        width: 43rem;
+    }
+    .info_texts {
+        width: 38rem;
+        font-size: 1.5rem;
+    }
+    .about_main-flag_name {
+        font-size: 2.3rem;
+    }
+    .about_main-flag-text {
+        width: 35rem;
+        font-size: 1.3rem;
+    }
+    .about_main-link-wikipedia {
+        width: 6rem;
+        font-size: 1.1rem;
+    }
+    .airAbout_name {
+        font-size: 2.3rem;
+    }
+    .airAbout_texts {
+        font-size: 1.2rem;
+        width: 35rem;
+    }
+    .MuiTypography-root {
+        font-size: 1.3rem !important;
+    }
+    .about {
+        background-position: inherit;
+    }
+    .tures_bg {
+        background-position: inherit;
+    }
+    .resigter_form {
+        margin-top: 10rem;
+        height: 21rem;
+    }
+    .register_form-label {
+        font-size: 1.2rem;
+    }
+    .form_btn {
+        font-size: 1.1rem;
+    }
+    .nav_profil {
+        margin-top: 0.6rem;
+    }
+    .profil_lognOut-block {
+        min-width: 6.1rem;
+    }
+}
+
+@media (min-width:1400px) and (max-width:1800px) {
+    .detail_btn {
+        font-size: 19px;
+    }
+    .detail_sell {
+        width: 44%;
+    }
+}
+
+@media (min-width:1300px) and (max-width:1500px) {
+    .about {
+        background-position: inherit;
+    }
+    .info_texts {
+        width: 33rem;
+    }
+    .information {
+        margin-top: 19rem;
+    }
+    .tures_bg {
+        background-position: inherit;
+    }
+    .main_btn-div {
+        width: 18%;
+    }
+}
+
+@media (min-width:1100px) and (max-width:1300px) {
+    .detail_sell {
+        width: 38%;
+        gap: 2.3rem;
+    }
+    .main_btn-div {
+        width: 20%;
+    }
+    .date_input {
+        padding: 8px 17px;
+    }
+    .index-module_type__E-SaG {
+        color: #000000 !important;
+    }
+    .information {
+        margin-top: 12rem;
+    }
+    .respons_sellCart {
+        font-size: 1.6rem;
+    }
+    .info_texts {
+        width: auto;
+        font-size: 1rem;
+    }
+    .tures_bg {
+        background-position: inherit;
+    }
+    .detail_img {
+        width: 34rem;
+        height: 24rem;
+    }
+    .profil_lognOut-block {
+        min-width: 6.16rem;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1100px) {
+    .profil_lognOut-block {
+        min-width: 6.16rem;
+    }
+    .information {
+        margin-top: 8rem;
+    }
+    .index-module_type__E-SaG {
+        color: black !important;
+    }
+    .data-img {
+        width: 26rem;
+    }
+    .info_category {
+        font-size: 1.5rem;
+    }
+    .info_texts {
+        font-size: 1rem;
+    }
+    .about {
+        background-position: inherit;
+    }
+    .info_text {
+        padding-top: 11px;
+    }
+    .main_btn-div {
+        width: 22%;
+    }
+    .about-main_header {
+        font-size: 1.7rem;
+    }
+    .airAbout_img {
+        width: 31rem;
+        height: 23rem;
+    }
+    .about_main-flag_img {
+        width: 27rem;
+        height: 37rem;
+    }
+    .tures_bg {
+        background-position: inherit;
+    }
+    .detail_img {
+        width: 30rem;
+        height: 20rem;
+    }
+    .detail_sell-name {
+        font-size: 1.7rem;
+    }
+    .detail_sell-price {
+        font-size: 2rem;
+    }
+    .date_input {
+        padding: 7px 15px;
+    }
+    .sellCart_info-box {
+        gap: 1.1rem;
+    }
+    .respons_sellCart {
+        font-size: 1.5rem;
+    }
+    .sellCart-img {
+        width: 18rem;
+        height: 12rem;
+    }
+    .resigter_form {
+        margin-top: 5rem;
+        width: 19rem;
+        margin-left: 6rem;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (min-width:900px) and (max-width:1000px) {
+    .nav_li-link {
+        font-size: 1rem;
+    }
+    .nav_logo-header_link {
+        font-size: 1.5rem;
+    }
+    .nav_logo {
+        margin-top: 0.5rem;
+    }
+    .profil_lognOut-block {
+        min-width: 3.7rem;
+        padding: 13px 14px;
+    }
+    .main {
+        margin-top: 5rem;
+    }
+    .main_btn {
+        font-size: 1rem;
+    }
+    .main_btn-div {
+        width: 25%;
+    }
+    .profil_email {
+        padding: 5px 5px;
+        font-size: 1rem;
+    }
+    .information {
+        margin-top: 10rem;
+    }
+    .info_text {
+        padding-top: 15px;
+    }
+    .info_category {
+        font-size: 1.5rem;
+    }
+    .data-img {
+        width: 25rem;
+    }
+    .info_texts {
+        width: 24rem;
+        font-size: 0.8rem;
+    }
+    .about-main_header {
+        font-size: 1.5rem;
+    }
+    .about_main-flag_img {
+        width: 25rem;
+        height: 35rem;
+    }
+    .about_main-flag_name {
+        font-size: 1.5rem;
+    }
+    .about_main-flag-text {
+        font-size: 0.8rem;
+    }
+    .about_main-link-wikipedia {
+        font-size: 0.8rem;
+        width: 4rem;
+    }
+    .airAbout_name {
+        font-size: 1.5rem;
+    }
+    .airAbout_texts {
+        font-size: 0.8rem;
+    }
+    .airAbout_text {
+        padding-left: 0;
+        float: inherit;
+        padding: 2rem;
+    }
+    .tures_cart-img {
+        width: 23rem;
+        height: 13rem;
+    }
+    .detail_btn {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    .detail_img {
+        width: 25rem;
+        height: 17rem;
+    }
+    .detail_sell-name {
+        font-size: 1.5rem;
+    }
+    .detail_sell-price {
+        font-size: 1.7rem;
+    }
+    .date_input {
+        padding: 8px 8px
+    }
+    .date_icons {
+        width: 1rem;
+    }
+    .sellCart-img {
+        width: 16rem;
+        height: 11rem;
+    }
+    .respons_sellCart {
+        font-size: 1.4rem;
+    }
+    .sellCart_info-box {
+        gap: 1.2rem;
+    }
+    .sellCart_info-btn {
+        padding: 3px 12px;
+    }
+    .resigter_form {
+        margin-top: 4rem;
+    }
+    .filter_not-favorite {
+        font-size: 3rem;
+    }
+    .about {
+        background-position: inherit;
+    }
+    .tures_bg {
+        background-position: inherit;
+    }
+}
+
+@media (min-width:769px) and (max-width:900px) {
+    .profil_lognOut-block {
+        min-width: 6.16rem;
+    }
+    .nav_list-none_div {
+        display: block;
+    }
+    .detail_img-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .detail_img {
+        width: 40rem;
+        height: 30rem;
+    }
+    .detail_map {
+        display: block;
+    }
+    .detail_sell-name {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .detail_sell-price {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .detail_form {
+        justify-content: center;
+        gap: 4rem;
+    }
+    .date_label {
+        font-size: 1.2rem;
+    }
+    .person_number-div {
+        justify-content: center;
+    }
+    .detail_sell {
+        justify-content: center;
+    }
+    .nav_list {
+        display: none;
+    }
+    .resigter_form {
+        height: 18rem;
+        padding: 1rem 1rem;
+        width: 14rem;
+    }
+    .filter_not-favorite {
+        font-size: 2.5rem;
+    }
+    .sellCart_info-btn {
+        padding: 4px 9px;
+        font-size: 0.7rem;
+    }
+    .respons_sellCart {
+        font-size: 1rem;
+    }
+    .sellCart-img {
+        width: 14rem;
+        height: 9rem;
+    }
+    .tures_bg {
+        height: 25rem;
+        background-position: inherit;
+    }
+    .tures_cart-img {
+        width: 20rem;
+        height: 12rem;
+    }
+    .main {
+        margin-top: 4rem;
+    }
+    .index-module_type__E-SaG {
+        font-size: 2.3rem;
+    }
+    .main_btn-div {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+    .main_btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .information {
+        margin-top: 8rem;
+    }
+    .info-vare {
+        font-size: 1.1rem;
+    }
+    .info {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .data-img {
+        width: 21rem;
+    }
+    .info_category {
+        font-size: 1.5rem;
+    }
+    .info_texts {
+        width: 23rem;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .info_text {
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .about-main_header {
+        font-size: 1.5rem;
+    }
+    .about {
+        background-position: inherit;
+    }
+    .about_main-flag_img {
+        width: 22rem;
+        height: 32rem;
+    }
+    .flag_text {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .about_main-flag-text {
+        width: 22rem;
+        letter-spacing: 0;
+    }
+    .airAbout_img {
+        width: 23rem;
+        height: 18rem;
+    }
+    .airAbout_text {
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        float: inherit;
+        gap: 0.5rem;
+    }
+    .airAbout_name {
+        font-size: 1.7rem;
+    }
+    .about_main-flag_name {
+        font-size: 1.7rem;
+    }
+    .airAbout_texts {
+        width: 22rem;
+        letter-spacing: 0;
+    }
+    .resigter_form {
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+    .about-main {
+        height: 25rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:769px) {
+    .nav_list {
+        display: none;
+    }
+    .nav_list-none_div {
+        display: block;
+    }
+    .detail_img-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .date_input {
+        padding: 0;
+    }
+    .person_number-div {
+        justify-content: center;
+    }
+    .detail_img {
+        width: 25rem;
+        height: 20rem;
+    }
+    .detail_map {
+        display: block;
+    }
+    .detail_sell-name {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .detail_sell-price {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .detail_form {
+        justify-content: center;
+        gap: 4rem;
+    }
+    .date_label {
+        font-size: 1.2rem;
+    }
+    .tures_bg {
+        background-position: inherit;
+        height: 15rem;
+    }
+    .tures_cart-texts {
+        padding: 9px 15px;
+    }
+    .tures_cart-img {
+        width: 22rem;
+    }
+    .tures_info-map {
+        display: flex;
+        justify-content: center;
+    }
+    .tures_bg-inp {
+        width: 20rem;
+    }
+    .footer_ul {
+        gap: 2rem;
+    }
+    .filter_not-favorite {
+        font-size: 1.7rem;
+    }
+    .footer_logo-header {
+        font-size: 1.7rem;
+    }
+    .main {
+        margin-top: 2rem;
+    }
+    .index-module_type__E-SaG {
+        font-size: 1.4rem;
+        color: black;
+    }
+    .nav_logo-header_link {
+        font-size: 1.7rem;
+    }
+    .main_btn-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main_btn {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 0.7rem;
+    }
+    .profil_email {
+        font-size: 1rem;
+        padding: 9px 8px;
+    }
+    .profil_lognOut-block {
+        min-width: 4.2rem;
+        padding: 13px 17px;
+    }
+    .main_btn-div {
+        margin-top: 2rem;
+    }
+    .information {
+        margin-top: 5rem;
+    }
+    .information_none {
+        display: block;
+        padding: 4rem;
+    }
+    .information_box {
+        display: none;
+    }
+    .info_none-slider {
+        display: flex;
+        justify-content: center;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .data-img {
+        width: 28rem;
+    }
+    .nav_profil {
+        margin-top: 0;
+    }
+    .info_texts {
+        width: 28rem;
+    }
+    .about {
+        background-position: inherit;
+    }
+    .about-main {
+        margin-top: 2rem;
+        gap: 2.5rem;
+        height: 14rem;
+    }
+    .about-main_header {
+        font-size: 1rem;
+    }
+    .flag_div-none {
+        display: block;
+        background-color: #1e6091;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .flag {
+        display: none;
+    }
+    .about_main-flag_div {
+        display: flex;
+        justify-content: center;
+        float: inherit;
+        margin-top: 1rem;
+    }
+    .about_main-flag_name {
+        text-align: center;
+    }
+    .about_main-flag_img {
+        width: 20rem;
+        height: 25rem;
+    }
+    .flag_text {
+        padding: 2rem;
+    }
+    .about_main-flag-text {
+        width: 100%;
+        text-align: center;
+        min-width: 25rem;
+    }
+    .about_main-link-wikipedia {
+        min-width: 12%;
+        margin: 0 auto;
+    }
+    .air_main {
+        display: none;
+    }
+    .air_main-none-img {
+        width: 30rem;
+        height: 20rem;
+    }
+    .airAbout_img-div {
+        display: flex;
+        justify-content: center;
+    }
+    .airAbout_img-div {
+        margin-top: 1rem;
+    }
+    .person-img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .prev {
+        left: 10px;
+    }
+    .sellCart-img {
+        width: 8rem;
+        height: 5rem;
+    }
+    .sellCart_info-box {
+        margin-left: 1rem;
+        gap: 0.5rem;
+    }
+    .respons_sellCart {
+        font-size: 0.8rem;
+    }
+    .gedisGelis_icons {
+        font-size: 0.8rem;
+    }
+    .sellCart_info-btn {
+        font-size: 0.7rem;
+        padding: 6px 5px;
+    }
+    .resigter_form {
+        margin-top: 10px;
+        gap: 0.3rem;
+        width: 13rem;
+        margin-left: 3rem;
+        padding: 7px 13px;
+        height: 12rem;
+    }
+    .form_btn {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .register_form-label {
+        font-size: 0.8rem;
+    }
+    .password_eye {
+        top: 1rem;
+    }
+    .inp_div-inp {
+        padding: 0;
+    }
+    .footer-nav_list {
+        margin-top: 0.8rem;
+    }
+    .footer_li-link {
+        font-size: 0.8rem;
+    }
+    .footer_logo-header {
+        font-size: 1.5rem;
+    }
+    footer {
+        padding: 1rem;
+        margin-top: 0;
+    }
+    .footer_bottom {
+        margin-top: 0;
+    }
+    .footer_bottom-span {
+        font-size: 0.5rem;
+    }
+    .faq {
+        padding-bottom: 4rem;
+    }
+    .sellCart_slide {
+        padding-bottom: 4rem;
+    }
+    .sellCart_div {
+        gap: 0;
+    }
+    .info_texts {
+        text-align: center;
+    }
+    .about_main-link-wikipedia {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:320px) and (max-width:481px) {
+    .nav_list {
+        display: none;
+    }
+    .nav_list-none_div {
+        display: block;
+    }
+    .main_btn {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+    .main_btn-div {
+        margin-top: 1rem;
+        width: 30%;
+    }
+    .information_none {
+        display: block;
+        padding-top: 4rem;
+    }
+    .information_box {
+        display: none;
+    }
+    .index-module_type__E-SaG {
+        font-size: 0.9rem;
+    }
+    .main {
+        margin-top: 1rem;
+    }
+    .data-img {
+        width: 17rem;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_texts {
+        width: 19rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .info_none-slider {
+        display: flex;
+        justify-content: center;
+    }
+    .information {
+        margin-top: 2.6rem;
+        padding-bottom: 2rem;
+    }
+    .info-vare {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    nav {
+        padding-top: 0.5rem;
+    }
+    .profil_email {
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+    .user_email {
+        font-size: 0.6rem;
+    }
+    .mode_svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    .language_flag {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    .profil_img {
+        margin-top: 0.3rem;
+    }
+    .language_div {
+        margin-top: 0.3rem;
+    }
+    .profil_lognOut-block {
+        padding: 5px 7px;
+    }
+    .nav_ul-none {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .nav_li-link {
+        font-size: 0.7rem;
+    }
+    .close_incos {
+        width: 1rem;
+        height: 1rem;
+    }
+    .footer_logo-header {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 0;
+        margin-top: 0;
+    }
+    .footer_ul {
+        gap: 1rem;
+    }
+    .footer_bottom {
+        margin-top: 0;
+    }
+    .footer_bottom-span {
+        font-size: 0.5rem;
+    }
+    .nav_list-none_icons {
+        width: 1rem;
+        height: 1rem;
+    }
+    .about {
+        background-image: url(../../public/background/holidays-1283014_640.jpg);
+        background-position: inherit;
+        background-size: auto;
+    }
+    .nav_logo-header_link {
+        font-size: 1.5rem;
+    }
+    .about-main {
+        height: 11rem;
+        margin-top: 1rem;
+        gap: 1.5rem;
+    }
+    .about-main_header {
+        font-size: 0.7rem;
+    }
+    .flag {
+        display: none;
+    }
+    .flag_div-none {
+        display: block;
+        background-color: #1e6091;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .about_main-flag_name {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .about_main-flag_div {
+        display: flex;
+        justify-content: center;
+        float: inherit;
+    }
+    .about_main-flag_img {
+        width: 15rem;
+        height: 23rem;
+    }
+    .about_main-flag-text {
+        font-size: 0.7rem;
+        letter-spacing: 0;
+        width: 18rem;
+        text-align: center;
+    }
+    .flag_text {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 0;
+        flex-direction: inherit;
+    }
+    .about_main-link-wikipedia {
+        min-width: 12%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+        margin-top: 1rem;
+    }
+    .airAbout_img-div {
+        display: flex;
+        float: inherit;
+        justify-content: center;
+    }
+    .air_main-none-img {
+        width: 17rem;
+        margin-top: 1rem;
+    }
+    .flag-none {
+        margin-top: 1rem;
+    }
+    .air_main {
+        display: none;
+    }
+    .faq {
+        padding-bottom: 4rem;
+    }
+    .tures_bg {
+        background-position: inherit;
+        height: 10rem;
+    }
+    .tures_bg-inp {
+        width: 13rem;
+        height: 2rem;
+        padding: 3px 24px;
+    }
+    .filter_div {
+        padding: 1px 10px;
+        border-radius: 9px;
+        width: 5.5rem;
+    }
+    .filter_header {
+        font-size: 1rem;
+    }
+    .filter_icons {
+        width: 1rem;
+        height: 1rem;
+    }
+    .filter_box-label {
+        font-size: 0.7rem;
+    }
+    .sort_inp {
+        width: 10px;
+    }
+    .filter_position-block {
+        width: 5.5rem;
+    }
+    .tures_cart-img {
+        width: 17rem;
+        height: 9rem;
+    }
+    .tures_info-map {
+        display: flex;
+        justify-content: center;
+    }
+    .detail_img {
+        width: 20rem;
+        height: 12rem;
+    }
+    element.style {
+        display: flex;
+        justify-content: center;
+    }
+    .detail_sell-name {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .detail_sell-price {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .date_label {
+        font-size: 0.7rem;
+    }
+    .date_input {
+        padding: 0;
+    }
+    .detail_form {
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+    }
+    .date_icons {
+        width: 1rem;
+        height: 1rem;
+    }
+    .person_number-div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .person-img {
+        width: 13rem;
+        height: 13rem;
+    }
+    .prev {
+        left: 0;
+    }
+    .detail_map {
+        display: inherit;
+    }
+    .detail_img-div {
+        display: flex;
+        justify-content: center;
+    }
+    .filter_not-favorite {
+        font-size: 1.2rem;
+    }
+    .sellCart-img {
+        width: 15rem;
+        height: 10rem;
+    }
+    .sellCart {
+        display: flex;
+        flex-direction: column;
+    }
+    .sellCart_info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .respons_sellCart {
+        font-size: 0.8rem;
+    }
+    .gedisGelis_icons {
+        font-size: 1rem;
+    }
+    .sellCart_info-btn {
+        font-size: 0.8rem;
+    }
+    .sellCart_img-div {
+        display: flex;
+        justify-content: center;
+    }
+    .sellCart_div {
+        padding-bottom: 3rem;
+    }
+    .resigter_form {
+        margin-top: 0;
+        width: 9rem;
+        margin-left: 2rem;
+        padding: 10px;
+        gap: 0.3rem;
+        height: 9rem;
+    }
+    .register_form-label {
+        font-size: 0.7rem;
+    }
+    .inp_div-inp {
+        padding: 1px 9px;
+        border-radius: 9px;
+        border: 0.4px solid black;
+        height: 15px;
+    }
+    .password_eye {
+        top: 0.8rem;
+    }
+    .form_btn {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    .tures_bg-inp_label-search {
+        width: 1rem;
+        height: 1rem;
+    }
+    .tures_bg-inp_label {
+        top: 0.6rem;
+        right: 5px;
+    }
+    .update_info-div {
+        width: 317px;
+    }
+    .profil_lognOut-block {
+        min-width: 3.16rem;
+    }
+    .adminpanel_infoAdd {
+        gap: 0.3;
+    }
+    .adminpanel_label {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:1975px) and (max-width:2100px) {
+    .sponsor_img {
+        width: 18rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width:1843px) and (max-width:1975px) {
+    .sponsor_img {
+        width: 17rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width:1705px) and (max-width:1845px) {
+    .sponsor_img {
+        width: 16rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width:1579px) and (max-width:1705px) {
+    .sponsor_img {
+        width: 15rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width:1445px) and (max-width:1579px) {
+    .sponsor_img {
+        width: 14rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width:1315px) and (max-width:1445px) {
+    .sponsor_img {
+        width: 13rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width:1190px) and (max-width:1315px) {
+    .sponsor_img {
+        width: 12rem;
+        height: 8rem;
+    }
+}
+
+@media (min-width:1060px) and (max-width:1190px) {
+    .sponsor_img {
+        width: 11rem;
+        height: 8rem;
+    }
+}
+
+@media (min-width:935px) and (max-width:1060px) {
+    .sponsor_img {
+        width: 10rem;
+        height: 6rem;
+    }
+}
+
+@media (min-width:800px) and (max-width:935px) {
+    .sponsor_img {
+        width: 9rem;
+        height: 5rem;
+    }
+}
+
+@media (min-width:691px) and (max-width:800px) {
+    .sponsor_img {
+        width: 8rem;
+        height: 4rem;
+    }
+}
+
+@media (min-width:560px) and (max-width:691px) {
+    .sponsor_img {
+        width: 7rem;
+        height: 4rem;
+    }
+}
+
+@media (min-width:567px) and (max-width:691px) {
+    .sponsor_img {
+        width: 8rem;
+        height: 4rem;
+    }
+    .inner-carousel-map {
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width:320px) and (max-width:567px) {
+    .support {
+        display: none;
+    }
+}

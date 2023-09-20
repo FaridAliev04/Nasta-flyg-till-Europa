@@ -1970,6 +1970,10 @@ article.nextSlide {
   }
 }
 @media (min-width: 481px) and (max-width: 769px) {
+  .support {
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+  }
   .nav_list {
     display: none;
   }

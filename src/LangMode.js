@@ -106,7 +106,7 @@ const langMode={
                 fagHeader:"Vanliga frågor"
         },
         reviews:{
-                reviewsHeader:"recensioner"
+                reviewsHeader:"Erbjuds till dig"
         },
         profile:{
                 profil:"Profil",
@@ -220,7 +220,7 @@ const langMode={
                 fagHeader:"Frequently Asked Questions"
         },
         reviews:{
-                reviewsHeader:"reviews"
+                reviewsHeader:"Offered to you"
         },
         profile:{
                 profil:"Profile",

@@ -71,7 +71,7 @@ const Reviews = () => {
                   <img src={img}  className="person-img" />
                   <h1 className="reviews_country" >{localStorage.getItem("langMode")=="sv"?country:countryEng}</h1>
                   <p  className="title">{localStorage.getItem("langMode")=="sv"?cityName:cityNameEng}</p>
-                  <button className="tures_cart-btn reviews_btn" onClick={() => navigate(`/card/detail/${id}`)}>{myLangData.tures.turesBtn}</button>
+                  <button className="tures_cart-btn reviews_btn" onClick={() =>( navigate(`/card/detail/${id}`))}>{myLangData.tures.turesBtn}</button>
                 </article>
               );
             })}

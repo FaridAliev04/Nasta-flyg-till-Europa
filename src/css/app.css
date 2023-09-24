@@ -749,6 +749,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  min-height: 19rem;
 }
 
 .sell_cart-header_ticket {
@@ -1024,13 +1025,14 @@ footer {
 .thankyou_jsx-div {
   display: flex;
   gap: 1.2rem;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   background-color: #023047;
   width: auto;
   padding: 7px 15px;
   transition: 1s;
+  z-index: 9999;
 }
 
 .thankYou_header {
@@ -1237,7 +1239,7 @@ article.nextSlide {
   background-color: #1e6091;
   z-index: 9999;
   width: auto;
-  min-width: 6.7rem;
+  min-width: 8.7rem;
 }
 
 .profil_email {

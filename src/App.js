@@ -62,8 +62,8 @@ function App() {
        <Route path='/favorite' element={<CoFavorite/>}/>
        <Route path='/LoggaIn' element={<CoDaxilOl/>}/>
        {
-                myId == "06e4138f-c6de-4147-a058-6334f7bc614d" ? <Route path='/adminPanel' element={<AdminPanel/>}/>:null
-            }
+         myId == "06e4138f-c6de-4147-a058-6334f7bc614d" ? <Route path='/adminPanel' element={<AdminPanel/>}/>:null
+        }
 
       </Routes>
     </BrowserRouter>

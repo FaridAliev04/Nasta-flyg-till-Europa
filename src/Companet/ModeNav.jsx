@@ -160,8 +160,7 @@ const ModeNav = ({inpInfo}) => {
                 </div>
                 <hr className='user_hr' />
                 <div className="profil_img">
-            <Img2 onClick={modeFunc} className={localStorage.getItem("mode")==="light"?'mode_svg':"mode_svg-none"}/>
-            <Img onClick={modeFunc} className={localStorage.getItem("mode")==="dark"?'mode_svg':"mode_svg-none"}/> 
+                <img onClick={modeFunc} className='mode_svg' src={localStorage.getItem("mode")==="light"?"/svg EYE MODE/light-light-mode-sun-svgrepo-com.svg":"/svg EYE MODE/night-night-mode-moon-svgrepo-com.svg"} alt={mode==="light"?"light":"night"} />
             </div> 
               <div className="language_div">
               <img onClick={(e)=>(localStorage.setItem("langMode","sv"),window.location.reload(),e.preventDefault())} className='language_flag' src="/flag/sweden_flag.png" alt="" />
